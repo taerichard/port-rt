@@ -3,7 +3,7 @@ import "../styles/secondContentStyles.css";
 
 const SecondContent = () => {
   return (
-    <div className="main-container">
+    <div className="second-content">
       <div class="container">
         <h1 class="center">Kidnapping The Princess</h1>
 
