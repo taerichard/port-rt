@@ -1,13 +1,6 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .second-content {
-  background: #444;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
+  color: black;
+  /* font-family: "Poppins", sans-serif; */
   margin: 0;
 }
 
@@ -16,15 +9,11 @@ p {
 }
 
 a {
-  color: #fff;
-}
-
-.center {
-  text-align: center;
+  color: black;
 }
 
 .container {
-  width: 95%;
+  width: 100%;
   max-width: 1220px;
   margin: 0 auto;
 }
@@ -41,7 +30,7 @@ a {
   padding: 10px 0;
   position: sticky;
   top: 0;
-  text-align: center;
+  /* text-align: center; */
   height: calc(10vw + 20px);
   transition: all 0.2s ease-in;
 }
@@ -59,7 +48,7 @@ a {
 }
 
 .episode__content .story {
-  line-height: 26px;
+  line-height: 15px;
 }
 
 @media (max-width: 600px) {

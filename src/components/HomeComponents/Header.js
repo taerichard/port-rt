@@ -33,7 +33,6 @@ const Header = () => {
           <span>Menu</span>
         </div>
       </div>
-      <Content />
     </div>
   );
 };

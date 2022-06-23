@@ -49,9 +49,7 @@ const Content = () => {
           <ArrowIcon className="arrow_animation" />
         </div>
       </div>
-      <div className="second-content">
-        <SecondContent />
-      </div>
+      <div className="second-content">{/* <SecondContent /> */}</div>
     </div>
   );
 };
