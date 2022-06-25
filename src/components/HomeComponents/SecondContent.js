@@ -1,6 +1,10 @@
 import React from "react";
 import "../styles/secondContentStyles.css";
-// codesandbow https://codepen.io/BurmesePotato/pen/qBbqpNB
+import Image from "./Image";
+import iosImage from "../../images/SecondContent/ios.jpg";
+import ptImage from "../../images/SecondContent/pt.jpg";
+import yelpApp from "../../images/SecondContent/yelpApp.jpg";
+
 const SecondContent = () => {
   return (
     <div className="container">
@@ -39,6 +43,11 @@ const SecondContent = () => {
             <span className="project-intro-text">PROJECTS</span>
           </span>
         </h4>
+        <div className="project-images">
+          <img className="iosImage" src={iosImage} />
+          <img className="ptImage" src={ptImage} />
+          <img className="yelpImage" src={yelpApp} />
+        </div>
       </section>
     </div>
   );
