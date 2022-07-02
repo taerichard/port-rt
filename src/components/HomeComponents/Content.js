@@ -8,12 +8,11 @@ const Content = () => {
     <div>
       <div className="content">
         <div className="content-title">
-          <span className="content-title__ui">
-            <span className="content-title__letter">U</span>
-            <span className="content-title__letter">I</span>
-          </span>
+          <span className="content-title__letter">U</span>
+          <span className="content-title__letter">I</span>
+
           <br />
-          <span className="content-title">
+          <div className="content-title">
             <span className="content-title__letter">D</span>
             <span className="content-title__letter">E</span>
             <span className="content-title__letter">V</span>
@@ -23,27 +22,23 @@ const Content = () => {
             <span className="content-title__letter">P</span>
             <span className="content-title__letter">E</span>
             <span className="content-title__letter">R</span>
-          </span>
+          </div>
         </div>
         <div className="image-container">
           <img />
         </div>
         <div className="name">
-          <span className="name-first">
-            <span className="name-first__letter">R</span>
-            <span className="name-first__letter">I</span>
-            <span className="name-first__letter">C</span>
-            <span className="name-first__letter">H</span>
-            <span className="name-first__letter">A</span>
-            <span className="name-first__letter">R</span>
-            <span className="name-first__letter">D</span>
-          </span>
+          <span className="name-first__letter">R</span>
+          <span className="name-first__letter">I</span>
+          <span className="name-first__letter">C</span>
+          <span className="name-first__letter">H</span>
+          <span className="name-first__letter">A</span>
+          <span className="name-first__letter">R</span>
+          <span className="name-first__letter">D</span>
           <br />
-          <span className="name-last">
-            <span className="name-first__letter">T</span>
-            <span className="name-first__letter">A</span>
-            <span className="name-first__letter">E</span>
-          </span>
+          <span className="name-first__letter">T</span>
+          <span className="name-first__letter">A</span>
+          <span className="name-first__letter">E</span>
         </div>
         <div className="arrow-container">
           <ArrowIcon className="arrow_animation" />

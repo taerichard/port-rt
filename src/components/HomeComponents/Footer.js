@@ -29,8 +29,8 @@ const Footer = () => {
         </ul>
       </div>
       <div className="footer-right">
-        <span>UI Developer</span>
         <span>Richard Tae's Portfolio</span>
+        <span>2022 © Edition</span>
       </div>
     </div>
   );

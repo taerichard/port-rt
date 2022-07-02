@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/headerStyles.css";
 import Content from "./Content";
 import { Link } from "react-router-dom";
+import Sidebar from "./Sidebar/Sidebar";
 
 const largeHeader = (
   <div className="large-header">
@@ -33,6 +34,8 @@ const largeHeader = (
 );
 
 const Header = () => {
+  const [sidebar, setSidebar] = useState(false);
+
   return (
     <div>
       {largeHeader}
@@ -43,7 +46,7 @@ const Header = () => {
           </a>
         </div>
         <div className="header_menu">
-          <span>Menu</span>
+          <span onClick={() => console.log("clicked")}>Menu</span>
         </div>
       </div>
     </div>
