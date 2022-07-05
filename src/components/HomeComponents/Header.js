@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "../styles/headerStyles.css";
-import Content from "./Content";
 import { Link } from "react-router-dom";
-import Sidebar from "./Sidebar/Sidebar";
+import { SidebarData } from "../HomeComponents/Sidebar/SidebarData";
 
 const largeHeader = (
   <div className="large-header">
@@ -36,8 +35,9 @@ const largeHeader = (
 const Header = () => {
   const [sidebar, setSidebar] = useState(false);
 
+  const showSideBar = () => setSidebar(!sidebar);
   return (
-    <div>
+    <>
       {largeHeader}
       <div className="header">
         <div className="header_logo">
@@ -46,10 +46,28 @@ const Header = () => {
           </a>
         </div>
         <div className="header_menu">
-          <span onClick={() => console.log("clicked")}>Menu</span>
+          <Link className="header-menu__logo" to="#">
+            <span onClick={showSideBar}>Menu</span>
+          </Link>
         </div>
+        <nav
+          className={sidebar ? "sidebar-active" : "sidebar"}
+          onClick={showSideBar}
+        >
+          <ul className="sidebar-list" onClick={showSideBar}>
+            {SidebarData.map((item, index) => {
+              return (
+                <li className={item.cName} key={index}>
+                  <Link to={item.link}>
+                    <span>{item.title}</span>
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
       </div>
-    </div>
+    </>
   );
 };
 
