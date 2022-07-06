@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/headerStyles.css";
+import "./styles/headerStyles.css";
 import { Link } from "react-router-dom";
 import { SidebarData } from "../HomeComponents/Sidebar/SidebarData";
 
@@ -65,6 +65,19 @@ const Header = () => {
               );
             })}
           </ul>
+          <div className="sidebar-header__name">
+            <p>Richard Tae</p>
+          </div>
+          <div className="sidebar-header__button">
+            <a>Close</a>
+          </div>
+          <div className="sidebar-footer">
+            <span>
+              Richard Tae's Portfolio <br />
+              2022 © Edition
+            </span>
+            <span></span>
+          </div>
         </nav>
       </div>
     </>

@@ -1,6 +1,6 @@
 import React from "react";
 import ArrowIcon from "./ArrowIcon";
-import "../styles/contentStyles.css";
+import "./styles/contentStyles.css";
 import SecondContent from "./SecondContent";
 
 const Content = () => {

@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/arrowIconStyles.css";
+import "./styles/arrowIconStyles.css";
 
 const ArrowIcon = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/secondContentStyles.css";
+import "./styles/secondContentStyles.css";
 import Image from "./Image";
 import iosImage from "../../images/SecondContent/ios.jpg";
 import ptImage from "../../images/SecondContent/pt.jpg";

@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import About from "./pages/About";
 import Work from "./pages/Work";
 import Header from "./components/HomeComponents/Header";
+import Footer from "./components/HomeComponents/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

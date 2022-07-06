@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/footerStyle.css";
+import "./styles/footerStyle.css";
 import { NavLink, Link } from "react-router-dom";
 
 const Footer = () => {
@@ -37,7 +37,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// <a target="_blank" href="https://google.com">
-// Policies
-// </a>
