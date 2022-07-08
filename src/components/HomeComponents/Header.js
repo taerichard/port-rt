@@ -6,7 +6,7 @@ import { SidebarData } from "../HomeComponents/Sidebar/SidebarData";
 const largeHeader = (
   <div className="large-header">
     <div className="header-name">
-      <a>Richard Tae</a>
+      <a href="/">Richard Tae</a>
     </div>
     <div className="header-role">
       <a>UI Developer</a>
@@ -18,14 +18,14 @@ const largeHeader = (
       <ul className="header-nav__items">
         <a href="/">
           <Link className="header-nav__item" to="work">
-            Work
+            Work.
           </Link>
         </a>
         <Link className="header-nav__item" to="about">
-          About
+          About.
         </Link>
         <Link className="header-nav__item" to="contact">
-          Contact
+          Contact.
         </Link>
       </ul>
     </div>
@@ -41,7 +41,7 @@ const Header = () => {
       {largeHeader}
       <div className="header">
         <div className="header_logo">
-          <a href="index.html" className="header__name">
+          <a href="/" className="header__name">
             Richard Tae
           </a>
         </div>
