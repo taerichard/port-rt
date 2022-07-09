@@ -4,15 +4,18 @@
   border: 3px solid red;
   min-height: 100vh;
   padding-top: 10rem;
+  row-gap: 10rem;
 }
 
-.about-image-container h4 {
+.num {
   font-size: 1.3rem;
   font-weight: 100;
   padding-bottom: 1rem;
 }
 
-.about-image-container span {
+/* .about-image-container span  */
+.title,
+.about-location {
   font-size: 3rem;
   line-height: 49px;
   text-transform: uppercase;
@@ -56,4 +59,20 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* accordion container */
+.services-container {
+  border: 3px solid chocolate;
+  grid-column-start: 1;
+  grid-column-end: 6;
+}
+
+.services-container .title {
+  margin-bottom: 0;
+}
+
+.accordion-container {
+  margin-top: 3rem;
+  border: 3px solid blue;
 }
