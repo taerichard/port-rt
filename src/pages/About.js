@@ -1,15 +1,15 @@
 import React from "react";
 import seattleImage from "../images/about/pc.jpg";
-import selfImage from "../images/about/me.jpg";
 import "../components/AboutComponents/styles/about.css";
 import Accordion from "../components/AboutComponents/accordion/Accordion";
 import { accordionData } from "../components/AboutComponents/accordion/accordionData";
+import "../components/AboutComponents/styles/accordion.css";
 
 const About = () => {
   return (
     <div className="about-container">
       <div className="about-image-container">
-        <h4 className="num">001/</h4>
+        <h4 className="num">01/</h4>
         <span className="title">Ui developer</span>
         <div className="about-image__1">
           <img className="" src={seattleImage} />
@@ -34,17 +34,21 @@ const About = () => {
           create lasting relationships.
         </p>
         <div className="about-image__2">
-          <img src={selfImage} />
+          <img />
         </div>
       </div>
       <div className="services-container">
-        <h4 className="num">002/</h4>
+        <h4 className="num">02/</h4>
         <span className="title">SERVICES</span>
         <div className="accordion-container">
           {accordionData.map(({ title, content }) => {
             return <Accordion title={title} content={content} />;
           })}
         </div>
+      </div>
+      <div className="personal-container">
+        <h4 className="num">03/</h4>
+        <span className="title">Interests</span>
       </div>
     </div>
   );

@@ -39,40 +39,42 @@
   width: 100%;
   object-fit: cover;
   max-width: 100%;
+  filter: grayscale(100%);
 }
 
 .about-image-container p {
   font-size: 1.2rem;
-  line-height: 1.23rem;
+  line-height: 1.5rem;
   margin-top: 3rem;
 }
 
 .about-image__2 {
-  border: 3px solid pink;
   height: 500px;
   max-width: 400px;
   margin: 0 auto;
   margin-top: 3rem;
+  background-color: lightgray;
 }
 
 .about-image__2 img {
-  width: 100%;
+  /* width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; */
 }
 
 /* accordion container */
 .services-container {
-  border: 3px solid chocolate;
   grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 7;
 }
 
 .services-container .title {
   margin-bottom: 0;
 }
 
-.accordion-container {
-  margin-top: 3rem;
-  border: 3px solid blue;
+/* Personal Section */
+.personal-container .title {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  font-style: italic;
 }

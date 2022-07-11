@@ -1,3 +1,44 @@
+.accordion-container {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
 .accordion-item {
-  border: 3px solid pink;
+  border-top: thin solid black;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  padding: 1.3rem 0 1.3rem 0;
+}
+
+.accordion-item:hover {
+  cursor: pointer;
+}
+.accordion-title-container,
+.accordion-content-container {
+  display: inline-block;
+}
+.accordion-title {
+  padding: 1rem 0 1rem;
+}
+
+.accordion-title-container h4 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+
+.accordion-button-container {
+  float: right;
+}
+
+.accordion-button-container span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: 500px;
+}
+
+.accordion-content {
+  padding: 1.5rem 0 1.5rem;
+  font-size: 1.3rem;
 }
