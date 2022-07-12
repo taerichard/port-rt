@@ -41,14 +41,14 @@ const About = () => {
         <h4 className="num">02/</h4>
         <span className="title">SERVICES</span>
         <div className="accordion-container">
-          {accordionData.map(({ title, content }) => {
+          {accordionData.map(({ number, title, content }) => {
             return <Accordion title={title} content={content} />;
           })}
         </div>
       </div>
       <div className="personal-container">
         <h4 className="num">03/</h4>
-        <span className="title">Interests</span>
+        <span className="title">About</span>
       </div>
     </div>
   );
