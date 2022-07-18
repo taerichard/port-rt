@@ -5,7 +5,6 @@
 }
 
 .accordion-item {
-  border-top: thin solid black;
   grid-column-start: 1;
   grid-column-end: 7;
   padding: 1.3rem 0 1.3rem 0;
