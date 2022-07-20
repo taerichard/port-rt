@@ -8,14 +8,8 @@ import HobbyButton from "../components/AboutComponents/hobbyButton/HobbyButton";
 import { hobbyButtonData } from "../components/AboutComponents/hobbyButton/hobbyButtonData";
 
 const About = () => {
-  const [hobbyImage, setHobbyImage] = useState(hobbyButtonData);
-  console.log(hobbyImage);
-  const handleClick = (event) => {
-    setHobbyImage((prevState) => {
-      console.log("f", prevState);
-    });
-    console.log(event.currentTarget.id);
-  };
+  const [selectedImgSrc, setSelectedImgSrc] = useState([hobbyButtonData.src]);
+  console.log(selectedImgSrc);
 
   return (
     <div className="about-container">
@@ -53,7 +47,7 @@ const About = () => {
         <h4 className="num">02/</h4>
         <span className="title">SERVICES</span>
         <div className="accordion-container">
-          {accordionData.map(({ number, title, content }) => {
+          {accordionData.map(({ title, content }) => {
             return <Accordion title={title} content={content} />;
           })}
         </div>
@@ -61,21 +55,26 @@ const About = () => {
       <div className="personal-container">
         <h4 className="num">03/</h4>
         <span className="title">About</span>
-        <div className="personal-hobbies">
-          {hobbyButtonData.map((data) => {
-            return (
-              <HobbyButton
-                id={data.title}
-                key={data.title}
-                onClick={handleClick}
-                value={data.title}
-              />
-            );
-          })}
-        </div>
+        {hobbyButtonData.map((img) => (
+          <HobbyButton
+            title={img.title}
+            key={img.title}
+            event={img.event}
+            onClick={() => setSelectedImgSrc(img.src)}
+          />
+        ))}
+        <div>{selectedImgSrc}</div>
       </div>
     </div>
   );
 };
 
 export default About;
+
+{
+  /* <div className="personal-hobbies">
+<HobbyButton title="Fitness" />
+<HobbyButton title="Travelling" />
+<HobbyButton onClick={showDogImage} title="Hanging with my dawg" />
+</div> */
+}

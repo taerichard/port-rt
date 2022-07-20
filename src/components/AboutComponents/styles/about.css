@@ -23,12 +23,12 @@
 
 .about-image-container {
   grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 7;
 }
 
 .about-image__1 {
   height: 400px;
-  max-width: 700px;
+  max-width: 475px;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }

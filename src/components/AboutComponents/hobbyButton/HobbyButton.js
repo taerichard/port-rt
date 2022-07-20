@@ -1,12 +1,7 @@
 import React from "react";
 
-const HobbyButton = ({ onClick, value, id }) => {
-  console.log("hobbyButton", value);
-  return (
-    <button id={id} onClick={onClick} value={value}>
-      {value}
-    </button>
-  );
+const HobbyButton = ({ title, onClick }) => {
+  return <button onClick={onClick}>{title}</button>;
 };
 
 export default HobbyButton;
