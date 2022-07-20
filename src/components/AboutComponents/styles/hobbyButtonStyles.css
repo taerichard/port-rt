@@ -1,0 +1,15 @@
+.hobbyButton {
+  display: block;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-family: PP Neue Montreal, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.hobbyButton:hover {
+  cursor: pointer;
+}

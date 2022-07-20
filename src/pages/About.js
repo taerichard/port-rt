@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import seattleImage from "../images/about/pc.jpg";
 import "../components/AboutComponents/styles/about.css";
 import Accordion from "../components/AboutComponents/accordion/Accordion";
 import { accordionData } from "../components/AboutComponents/accordion/accordionData";
@@ -10,6 +9,10 @@ import { hobbyButtonData } from "../components/AboutComponents/hobbyButton/hobby
 const About = () => {
   const [selectedImgSrc, setSelectedImgSrc] = useState([hobbyButtonData.src]);
   console.log(selectedImgSrc);
+
+  const showImageAndChangeStyle = (event) => {
+    console.log(event.target.style);
+  };
 
   return (
     <div className="about-container">
@@ -60,10 +63,13 @@ const About = () => {
             title={img.title}
             key={img.title}
             event={img.event}
-            onClick={() => setSelectedImgSrc(img.src)}
+            // onClick={() => setSelectedImgSrc(img.src)}
+            onClick={showImageAndChangeStyle}
           />
         ))}
-        <div>{selectedImgSrc}</div>
+        <div className="personal-image-container">
+          <img src={selectedImgSrc} />
+        </div>
       </div>
     </div>
   );

@@ -80,3 +80,11 @@
 }
 
 /* Personal Section SERVICES*/
+.personal-container {
+  border: 2px solid purple;
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
+/* image container */
+.personal-image-container {
+}
