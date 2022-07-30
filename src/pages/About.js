@@ -5,13 +5,15 @@ import { accordionData } from "../components/AboutComponents/accordion/accordion
 import "../components/AboutComponents/styles/accordion.css";
 import HobbyButton from "../components/AboutComponents/hobbyButton/HobbyButton";
 import { hobbyButtonData } from "../components/AboutComponents/hobbyButton/hobbyButtonData";
+import officeImage from "../images/about/office.jpg";
 
 const About = () => {
   const [selectedImgSrc, setSelectedImgSrc] = useState([hobbyButtonData.src]);
-  console.log(selectedImgSrc);
-
-  const showImageAndChangeStyle = (event) => {
-    console.log(event.target.style);
+  const [image, selectImage] = useState([hobbyButtonData]);
+  const showImage = (imageId) => {
+    image.filter((item) => {
+      return item.id == imageId;
+    });
   };
 
   return (
@@ -20,8 +22,7 @@ const About = () => {
         <h4 className="num">01/</h4>
         <span className="title">Ui developer</span>
         <div className="about-image__1">
-          {/* <img className="" src={seattleImage} /> */}
-          <div></div>
+          <img className="" src={officeImage} />
         </div>
         <span className="about-location">
           Located
@@ -56,20 +57,30 @@ const About = () => {
         </div>
       </div>
       <div className="personal-container">
-        <h4 className="num">03/</h4>
-        <span className="title">About</span>
-        {hobbyButtonData.map((img) => (
+        <h4 className="num">03/ABOUT</h4>
+
+        {/* {hobbyButtonData.map((img) => (
           <HobbyButton
             title={img.title}
             key={img.title}
             event={img.event}
-            // onClick={() => setSelectedImgSrc(img.src)}
-            onClick={showImageAndChangeStyle}
+            onClick={(event) => setSelectedImgSrc(event)}
           />
-        ))}
-        <div className="personal-image-container">
+        ))} */}
+        {hobbyButtonData.map((item) => {
+          return (
+            <button
+              id={item.id}
+              onClick={(event) => showImage(event.target.id)}
+            >
+              {item.title}
+            </button>
+          );
+        })}
+        {selectedImgSrc}
+        {/* <div className="personal-image-container">
           <img src={selectedImgSrc} />
-        </div>
+        </div> */}
       </div>
     </div>
   );
