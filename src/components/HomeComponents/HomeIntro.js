@@ -1,9 +1,7 @@
 import React from "react";
-import ArrowIcon from "./ArrowIcon";
-import "./styles/contentStyles.css";
-import SecondContent from "./SecondContent";
+import "./styles/homeIntroStyles.css";
 
-const Content = () => {
+const HomeIntro = () => {
   return (
     <div>
       <div className="content">
@@ -40,13 +38,10 @@ const Content = () => {
           <span className="name-first__letter">A</span>
           <span className="name-first__letter">E</span>
         </div>
-        <div className="arrow-container">
-          <ArrowIcon className="arrow_animation" />
-        </div>
       </div>
       <div className="second-content">{/* <SecondContent /> */}</div>
     </div>
   );
 };
 
-export default Content;
+export default HomeIntro;

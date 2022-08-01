@@ -71,17 +71,30 @@
 
 /* Personal Section SERVICES*/
 .personal-container {
-  grid-column-start: 1;
-  grid-column-end: 7;
-}
-/* image container */
-.personal-image-container {
-  width: 500px;
-  height: 500px;
+  border: 2px solid crimson;
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: 1fr 1fr;
+  /* grid-column-start: 1;
+  grid-column-end: 7; */
+  /* height: 400px; */
 }
 
-.personal-image-container img {
+.personal-button-container {
+  border: 2px solid purple;
+  display: inline-block;
+}
+
+/* image container */
+.personal-image-container {
+  display: inline-block;
+  border: 2px solid pink;
+  width: 200px;
+  height: 100%;
+}
+
+/* .personal-image-container img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
+} */

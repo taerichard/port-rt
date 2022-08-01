@@ -1,0 +1,62 @@
+.intro-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  border: 2px solid blue;
+}
+
+.title {
+  border: 2px solid blue;
+}
+
+.title h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.intro-message-1 {
+  border: 2px solid brown;
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+
+.intro-message-1__text {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1.25;
+  padding-bottom: 2rem;
+}
+
+.intro-message-2 {
+  border: 2px solid pink;
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+
+.intro-message-2__text {
+  font-size: 20px;
+  padding-bottom: 2rem;
+}
+
+.intro-button-container {
+  padding-top: 3rem;
+  border: 2px solid yellow;
+  grid-column-start: 4;
+}
+
+.intro-button {
+  background: #494b4e;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.intro-button__text {
+  color: #e1dfdd;
+  font-size: 2rem;
+  text-decoration: none;
+}

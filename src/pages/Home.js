@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../components/HomeComponents/Header";
-import Content from "../components/HomeComponents/Content";
-import SecondContent from "../components/HomeComponents/SecondContent";
+import HomeIntro from "../components/HomeComponents/HomeIntro";
+import IntroContent from "../components/HomeComponents/IntroContent";
 
 const Home = () => {
   return (
     <div>
-      <Content />
-      <SecondContent />
+      <HomeIntro />
+      <IntroContent />
     </div>
   );
 };

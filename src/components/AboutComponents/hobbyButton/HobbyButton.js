@@ -1,10 +1,9 @@
 import React from "react";
 import "../styles/hobbyButtonStyles.css";
 
-const HobbyButton = ({ title, onClick, event }) => {
-  console.log("button", event);
+const HobbyButton = ({ title, onClick }) => {
   return (
-    <button className="hobbyButton" onClick={onClick}>
+    <button onClick={onClick} className="hobbyButton">
       {title}
     </button>
   );

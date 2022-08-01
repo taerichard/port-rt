@@ -8,12 +8,10 @@ import { hobbyButtonData } from "../components/AboutComponents/hobbyButton/hobby
 import officeImage from "../images/about/office.jpg";
 
 const About = () => {
-  const [selectedImgSrc, setSelectedImgSrc] = useState([hobbyButtonData.src]);
-  const [image, selectImage] = useState([hobbyButtonData]);
-  const showImage = (imageId) => {
-    image.filter((item) => {
-      return item.id == imageId;
-    });
+  const [hobbyImg, setHobbyImg] = useState([hobbyButtonData.src]);
+
+  const displayImage = (event) => {
+    console.log(event);
   };
 
   return (
@@ -57,30 +55,19 @@ const About = () => {
         </div>
       </div>
       <div className="personal-container">
-        <h4 className="num">03/ABOUT</h4>
+        <div className="personal-button-container">
+          <h4 className="num">03/ABOUT</h4>
 
-        {/* {hobbyButtonData.map((img) => (
-          <HobbyButton
-            title={img.title}
-            key={img.title}
-            event={img.event}
-            onClick={(event) => setSelectedImgSrc(event)}
-          />
-        ))} */}
-        {hobbyButtonData.map((item) => {
-          return (
-            <button
-              id={item.id}
-              onClick={(event) => showImage(event.target.id)}
-            >
-              {item.title}
-            </button>
-          );
-        })}
-        {selectedImgSrc}
-        {/* <div className="personal-image-container">
-          <img src={selectedImgSrc} />
-        </div> */}
+          {hobbyButtonData.map((img) => (
+            <HobbyButton
+              title={img.title}
+              onClick={(event) => displayImage(event.target.src)}
+            />
+          ))}
+        </div>
+        <div className="personal-image-container">
+          <img src={hobbyImg} />
+        </div>
       </div>
     </div>
   );
