@@ -1,0 +1,80 @@
+.project-container {
+  margin-top: 5rem;
+  border: 2px solid red;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.project-title {
+  border: 2px solid blue;
+  grid-column-start: 1;
+}
+
+.project-title h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.project-title-2 {
+  border: 2px solid green;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  justify-self: center;
+}
+
+.project-title-2 h4 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/*project container*/
+.project-1 {
+  justify-self: baseline;
+  margin-top: 5rem;
+  border: 2px solid cyan;
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+
+.project-1__title {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.project-1__role {
+  margin-top: 0.5rem;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.project-img-container {
+  margin-top: 3rem;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  height: 300px;
+  width: 100%;
+  background-color: lightgray;
+}
+
+.project-button {
+  margin-top: 3rem;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background: #494b4e;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.project-button__text {
+  color: #e1dfdd;
+  font-size: 2rem;
+  text-decoration: none;
+}
