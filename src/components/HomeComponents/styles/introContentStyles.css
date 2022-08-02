@@ -60,3 +60,17 @@
   font-size: 2rem;
   text-decoration: none;
 }
+
+@media (min-width: 1100px) {
+  .intro-container {
+    grid-template-columns: repeat(13, 1fr);
+  }
+  .title {
+    position: relative;
+    top: -15px;
+  }
+  .intro-message-1 {
+    grid-column-start: 4;
+    grid-column-end: 11;
+  }
+}
