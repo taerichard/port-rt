@@ -11,6 +11,9 @@ const ProjectContent = () => {
       <div className="project-title-2">
         <h4>Recent Projects</h4>
       </div>
+      <div className="project-title-3">
+        <h4>UI Developer</h4>
+      </div>
       <div className="project-1">
         <h4 className="project-1__title">Konbini</h4>
         <h3 className="project-1__role">App Design & Development</h3>

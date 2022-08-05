@@ -56,17 +56,11 @@
   font-weight: 500;
 }
 
-/* second content */
-.second-content {
-  grid-column-start: 6;
-}
-
 @media (min-width: 1100px) {
   .content {
     display: grid;
     grid-template-columns: repeat(13, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    /* row-gap: 0; */
   }
   .content-title__ui > span,
   .content-title > span {
@@ -86,9 +80,8 @@
   }
 
   .name {
-    grid-column-start: 8;
-    grid-column-end: 14;
-    /* justify-self: center; */
+    grid-column-start: 7;
+    grid-column-end: -1;
     text-align: right;
   }
 }

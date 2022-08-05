@@ -28,6 +28,10 @@
   text-transform: uppercase;
 }
 
+.project-title-3 {
+  display: none;
+}
+
 /*project container*/
 .project-1 {
   justify-self: baseline;
@@ -77,4 +81,46 @@
   color: #e1dfdd;
   font-size: 2rem;
   text-decoration: none;
+}
+
+@media (min-width: 1100px) {
+  .project-container {
+    grid-template-columns: repeat(13, 1fr);
+  }
+
+  .project-title-2 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+  }
+
+  .project-title-2 h4 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  .project-title-3 {
+    display: block;
+    grid-column-start: 11;
+    grid-column-end: 12;
+  }
+
+  .project-title-3 h4 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .project-1 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+  }
+
+  .project-img-container {
+    border: 2px solid red;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    height: 450px;
+  }
 }
