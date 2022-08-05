@@ -1,6 +1,6 @@
 .header {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr);
   padding-top: 42px;
   line-height: 1.4rem;
   text-decoration-style: solid;
@@ -8,8 +8,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding-right: 40px;
   z-index: 101;
+  border: 2px solid red;
 }
 
 body:not(.header) {
