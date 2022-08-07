@@ -10,7 +10,6 @@
   /* width: inherit;
   max-width: inherit; */
   z-index: 101;
-  border: 2px solid red;
 }
 
 body:not(.header) {
@@ -30,7 +29,6 @@ body:not(.header) {
 
 .header_menu {
   grid-column: 4/8;
-  border: 2px solid gray;
   justify-self: end;
   font-size: 22px;
 }

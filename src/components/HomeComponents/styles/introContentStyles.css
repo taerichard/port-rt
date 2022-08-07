@@ -83,7 +83,7 @@
   }
 
   .intro-message-2__title {
-    height: 50px;
+    height: auto;
     border: 2px solid crimson;
     display: block;
     grid-column-start: 4;
@@ -95,15 +95,19 @@
     font-weight: 500;
   }
 
-  .intro-button {
+  /* .intro-button {
     width: 225px;
     height: 225px;
-  }
+  } */
 
   .intro-button-container {
-    grid-column-start: 4;
+    display: none;
+    /* grid-column-start: 4;
     position: relative;
     top: -110%;
-    left: 25%;
+    left: 25%; */
+  }
+  .intro-button-large__text {
+    grid-column-start: 4;
   }
 }

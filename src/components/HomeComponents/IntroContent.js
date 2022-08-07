@@ -42,6 +42,7 @@ const IntroContent = () => {
           </Link>
         </div>
       </div>
+      <h4 className="intro-button-large__text">More about services</h4>
     </div>
   );
 };
