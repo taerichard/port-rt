@@ -19,6 +19,9 @@ const IntroContent = () => {
           hanging with my dog.
         </p>
       </div>
+      <div className="intro-message-2__title">
+        <h4>UI Design & Development</h4>
+      </div>
       <div className="intro-message-2">
         <p className="intro-message-2__text">
           Recently, graduated with a Bachelors of Applied Science in Mobile
@@ -39,6 +42,7 @@ const IntroContent = () => {
           </Link>
         </div>
       </div>
+      <h4 className="intro-button-large__text">More about services</h4>
     </div>
   );
 };

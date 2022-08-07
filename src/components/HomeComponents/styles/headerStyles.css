@@ -1,19 +1,19 @@
 .header {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  padding-top: 42px;
+  grid-template-columns: repeat(7, 1fr);
+  padding-top: 32px;
   line-height: 1.4rem;
   text-decoration-style: solid;
   text-decoration-color: rgb(225, 223, 221);
-  position: fixed;
   top: 0;
-  width: 100%;
-  padding-right: 40px;
+  position: sticky;
+  /* width: inherit;
+  max-width: inherit; */
   z-index: 101;
 }
 
 body:not(.header) {
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .header_logo {
@@ -28,8 +28,8 @@ body:not(.header) {
 }
 
 .header_menu {
-  grid-column: 6/7;
-  justify-self: flex-end;
+  grid-column: 4/8;
+  justify-self: end;
   font-size: 22px;
 }
 
@@ -183,6 +183,7 @@ body:not(.header) {
     grid-template-columns: repeat(13, minmax(0, 13));
     column-gap: 1rem;
     /* font-size: 1.8rem; */
+    padding-top: 42px;
     font-size: 1.4rem;
     line-height: 25px;
   }
@@ -195,5 +196,10 @@ body:not(.header) {
   .header-name a {
     text-decoration: none;
     color: inherit;
+    /* position: fixed; */
+  }
+
+  body:not(.header) {
+    padding: 0 70px;
   }
 }
