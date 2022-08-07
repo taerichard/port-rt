@@ -34,6 +34,11 @@ const IntroContent = () => {
           and applications. I build scalable websites from scratch that fit
           seamlessly with design.
         </p>
+        <h4 className="intro-button-large__text">
+          <Link className="intro-button__text" to="about">
+            More about services
+          </Link>
+        </h4>
       </div>
       <div className="intro-button-container">
         <div className="intro-button">
@@ -42,7 +47,6 @@ const IntroContent = () => {
           </Link>
         </div>
       </div>
-      <h4 className="intro-button-large__text">More about services</h4>
     </div>
   );
 };
