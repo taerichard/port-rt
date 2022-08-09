@@ -110,12 +110,13 @@
   .intro-message-2 .intro-button-large__text {
     display: block;
     grid-column-start: 4;
+    grid-column-end: -1;
     font-size: 20px;
     font-weight: 500;
     padding-top: 3rem;
     border-bottom: 2px solid black;
     padding-bottom: 10px;
-    border-bottom: 2px solid pink;
+    border-bottom: 2px solid black;
     text-align: center;
     width: 51%;
   }
