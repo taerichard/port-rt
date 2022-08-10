@@ -95,17 +95,8 @@
     font-weight: 500;
   }
 
-  /* .intro-button {
-    width: 225px;
-    height: 225px;
-  } */
-
   .intro-button-container {
     display: none;
-    /* grid-column-start: 4;
-    position: relative;
-    top: -110%;
-    left: 25%; */
   }
   .intro-message-2 .intro-button-large__text {
     display: block;

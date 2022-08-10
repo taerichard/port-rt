@@ -17,7 +17,11 @@ const ProjectContent = () => {
       <div className="project-1">
         <h4 className="project-1__title">Konbini</h4>
         <h3 className="project-1__role">App Design & Development</h3>
-        <h3 className="project-1__button">More Projects</h3>
+        <h3 className="project-1__button">
+          <Link className="project-1__link" to="work">
+            More Projects
+          </Link>
+        </h3>
       </div>
       <div className="project-img-container">
         <img />

@@ -1,6 +1,5 @@
 .contactContent-container {
   margin-top: 10rem;
-  border: 2px solid red;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   width: 100%;
@@ -8,7 +7,6 @@
 
 .contactContent-title {
   grid-column-start: 1;
-  border: 2px solid blue;
 }
 
 .contactContent-title h4 {
@@ -19,7 +17,6 @@
 .contactContent-title-2 {
   grid-column-start: 4;
   grid-column-end: 4;
-  border: 2px solid green;
 }
 
 .contactContent-title-2 h4 {
@@ -32,7 +29,6 @@
   margin: 5rem 0 10rem 0;
   grid-column-start: 1;
   grid-column-end: 8;
-  border: 2px solid cyan;
   text-align: center;
 }
 
@@ -46,4 +42,44 @@
   text-transform: uppercase;
   line-height: 3rem;
   text-decoration: underline;
+}
+
+.contactContent-title-3 {
+  display: none;
+}
+@media (min-width: 1100px) {
+  .contactContent-container {
+    grid-template-columns: repeat(13, 1fr);
+    margin-top: 20rem;
+  }
+
+  .contactContent-title-3 {
+    grid-column-start: 10;
+    grid-column-end: 14;
+    justify-self: center;
+  }
+
+  .contactContent-title-3 h4 {
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .contactContent-title-2 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+  }
+
+  .contactContent-contact {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    justify-self: center;
+    margin-bottom: 12rem;
+  }
+
+  .contactContent-contact a .contactContent-email {
+    font-size: 10rem;
+    line-height: 7rem;
+    text-decoration: none;
+  }
 }
