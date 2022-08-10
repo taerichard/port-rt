@@ -23,9 +23,7 @@ const HomeIntro = () => {
         </div>
       </div>
       <div className="image-container">
-        <div className="image-first-container">
-          <img src={homeIntroImage} />
-        </div>
+        <img src={homeIntroImage} />
       </div>
       <div className="name">
         <span className="name-first__letter">R</span>

@@ -1,11 +1,9 @@
 .intro-container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  border: 2px solid blue;
 }
 
 .title {
-  border: 2px solid blue;
 }
 
 .title h4 {
@@ -14,7 +12,6 @@
 }
 
 .intro-message-1 {
-  border: 2px solid brown;
   grid-column-start: 1;
   grid-column-end: 8;
 }
@@ -31,7 +28,6 @@
 }
 
 .intro-message-2 {
-  border: 2px solid pink;
   grid-column-start: 1;
   grid-column-end: 8;
 }
@@ -43,7 +39,6 @@
 
 .intro-button-container {
   padding-top: 6rem;
-  border: 2px solid yellow;
   grid-column-start: 4;
 }
 
@@ -65,6 +60,10 @@
   text-decoration: none;
 }
 
+.intro-button-large__text {
+  display: none;
+}
+
 @media (min-width: 1100px) {
   .intro-container {
     grid-template-columns: repeat(13, 1fr);
@@ -78,13 +77,14 @@
     grid-column-end: 12;
   }
   .intro-message-2 {
+    padding-top: 5rem;
     grid-column-start: 8;
     grid-column-end: 12;
   }
 
   .intro-message-2__title {
+    padding-top: 5rem;
     height: auto;
-    border: 2px solid crimson;
     display: block;
     grid-column-start: 4;
     grid-column-end: 7;
@@ -95,19 +95,25 @@
     font-weight: 500;
   }
 
-  /* .intro-button {
-    width: 225px;
-    height: 225px;
-  } */
-
   .intro-button-container {
     display: none;
-    /* grid-column-start: 4;
-    position: relative;
-    top: -110%;
-    left: 25%; */
   }
-  .intro-button-large__text {
+  .intro-message-2 .intro-button-large__text {
+    display: block;
     grid-column-start: 4;
+    grid-column-end: -1;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 3rem;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    text-align: center;
+    width: 51%;
+  }
+
+  .intro-button__text {
+    color: black;
+    font-size: 22px;
   }
 }
