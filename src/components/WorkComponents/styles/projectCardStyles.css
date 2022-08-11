@@ -1,0 +1,23 @@
+.project-card {
+  border: 2px solid red;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-card__title {
+  border: 2px solid blue;
+  font-size: 56px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.project-card__description {
+  border: 2px solid green;
+}
+
+.project-image-container {
+  width: 500px;
+  height: 500px;
+  border: 2px solid purple;
+}

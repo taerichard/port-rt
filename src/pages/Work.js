@@ -1,6 +1,11 @@
 import React from "react";
+import ProjectList from "../components/WorkComponents/ProjectList";
+import { ProjectData } from "../components/WorkComponents/ProjectData";
+import ProjectCard from "../components/WorkComponents/ProjectCard";
+import "../components/WorkComponents/styles/workStyles.css";
 
 const Work = () => {
+  console.log(ProjectList);
   return (
     <div className="work-container">
       <div className="work-title-1">
@@ -16,6 +21,18 @@ const Work = () => {
           Selected projects consisted of collaborative and personal work. These
           are from clients, personal, and collaborative work.
         </p>
+      </div>
+      {/* <div>{ProjectList}</div> */}
+      <div className="work-projectList">
+        {ProjectData.map((project) => {
+          return (
+            <ProjectCard
+              key={project.id}
+              title={project.title}
+              description={project.description}
+            />
+          );
+        })}
       </div>
     </div>
   );
