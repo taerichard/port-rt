@@ -3,9 +3,9 @@ import ProjectList from "../components/WorkComponents/ProjectList";
 import { ProjectData } from "../components/WorkComponents/ProjectData";
 import ProjectCard from "../components/WorkComponents/ProjectCard";
 import "../components/WorkComponents/styles/workStyles.css";
+import ContactContent from "../components/HomeComponents/ContactContent";
 
 const Work = () => {
-  console.log(ProjectList);
   return (
     <div className="work-container">
       <div className="work-title-1">
@@ -22,7 +22,6 @@ const Work = () => {
           are from clients, personal, and collaborative work.
         </p>
       </div>
-      {/* <div>{ProjectList}</div> */}
       <div className="work-projectList">
         {ProjectData.map((project) => {
           return (
@@ -30,9 +29,13 @@ const Work = () => {
               key={project.id}
               title={project.title}
               description={project.description}
+              imageSrc={project.imageSrc}
             />
           );
         })}
+      </div>
+      <div className="work-contact-container">
+        <ContactContent />
       </div>
     </div>
   );

@@ -5,10 +5,16 @@ import { ProjectData } from "./ProjectData";
 const ProjectList = () => {
   console.log(ProjectData);
   return (
-    <div>
-      {ProjectData.map((project) => (
-        <ProjectCard title={project.title} description={project.description} />
-      ))}
+    <div className="work-projectList">
+      {ProjectData.map((project) => {
+        return (
+          <ProjectCard
+            key={project.id}
+            title={project.title}
+            description={project.description}
+          />
+        );
+      })}
     </div>
   );
 };
