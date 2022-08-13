@@ -3,7 +3,6 @@ import ProjectList from "../components/WorkComponents/ProjectList";
 import { ProjectData } from "../components/WorkComponents/ProjectData";
 import ProjectCard from "../components/WorkComponents/ProjectCard";
 import "../components/WorkComponents/styles/workStyles.css";
-import ContactContent from "../components/HomeComponents/ContactContent";
 
 const Work = () => {
   return (
@@ -34,9 +33,7 @@ const Work = () => {
           );
         })}
       </div>
-      <div className="work-contact-container">
-        <ContactContent />
-      </div>
+      <div className="work-contact-container"></div>
     </div>
   );
 };
