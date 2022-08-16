@@ -1,0 +1,17 @@
+.projectModal-container {
+  width: 100vw;
+  height: 100vh;
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  background-color: blue;
+  color: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: absolute !important;
+  z-index: 2000;
+  border-radius: 10px;
+}
+
+.projectModal-col- {
+  grid-column-start: 2;
+}

@@ -25,10 +25,12 @@ const ProjectCard = (props) => {
           <p style={BUTTON_WRAPPER_STYLES} onClick={() => setIsOpen(true)}>
             More
           </p>
-          <ProjectModal open={isOpen} onClose={() => setIsOpen(false)}>
-            Hello
-          </ProjectModal>
         </div>
+      </div>
+      <div className="projectCard-projetModal-container">
+        <ProjectModal open={isOpen} onClose={() => setIsOpen(false)}>
+          Hello
+        </ProjectModal>
       </div>
     </div>
   );

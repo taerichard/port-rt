@@ -1,40 +1,31 @@
 import React from "react";
+import "./styles/projectModalStyles.css";
+// import ReactDom from "react-dom";
 
-const MODAL_STYLES = {
-  position: "fixed",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  backgroundColor: "#FFF",
-  zIndex: 1000,
-};
-
-const BUTTON_STYLE = {
-  zIndex: 2000,
-};
-
-const OVERLAY_STYLES = {
-  position: "fixed",
-  top: 0,
-  left: 0,
-  right: 0,
-  bottom: 0,
-  backgroundColor: "rgba(0,0,0,.7)",
-
-  zIndex: 1000,
-};
-
-const ProjectModal = (props) => {
-  if (!props.open) return null;
+const ProjectModal = ({ onClose, open }) => {
+  if (!open) return null;
   return (
-    <>
-      <div style={OVERLAY_STYLES}></div>
-      <div style={MODAL_STYLES}></div>
-      <button style={BUTTON_STYLE} onClick={props.onClose}>
-        close modal
-      </button>
-    </>
+    <div className="projectModal-container">
+      <div className="projectModal-col-1">
+        <button className="projectModal-button" onClick={onClose}>
+          Close
+        </button>
+      </div>
+    </div>
   );
 };
 
 export default ProjectModal;
+
+// <>
+//   <div style={MODAL_CONTAINER}>
+//     <div style={OVERLAY_STYLES}></div>
+//     <div style={MODAL_STYLES}></div>
+//     <button style={BUTTON_STYLE} onClick={props.onClose}>
+//       close modal
+//     </button>
+//   </div>
+// </>
+
+{
+}

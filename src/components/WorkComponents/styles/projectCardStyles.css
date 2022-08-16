@@ -63,3 +63,43 @@
 .project-card-button-container:hover {
   cursor: pointer;
 }
+
+.projectCard-projetModal-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+@media (min-width: 1100px) {
+  .project-card-container {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: none;
+
+    border: 2px solid green;
+    padding-top: 4rem;
+    border: 2px solid green;
+  }
+  .project-description-container {
+    width: 400px;
+  }
+  .project-card__description {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+  }
+  .project-image-container {
+    grid-column-start: 5;
+    grid-column-end: 13;
+    grid-template-rows: none;
+    position: relative;
+    grid-row-start: 1;
+    border: 2px solid red;
+  }
+
+  .project-card {
+    height: 100px;
+  }
+
+  .project-card__image {
+  }
+}
