@@ -1,18 +1,15 @@
 .project-card-container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 100px 100px 1fr;
-  row-gap: 25px;
+  grid-template-rows: min-content;
+  column-gap: 32px;
   padding-top: 4rem;
 }
 
 .project-card {
   grid-column-start: 1;
-}
-
-.project-description-container {
-  grid-column-start: 1;
-  grid-column-end: 5;
+  grid-column-end: 7;
+  padding-bottom: 1rem;
 }
 
 .project-card__title {
@@ -20,11 +17,13 @@
   font-size: 56px;
   font-weight: 500;
   text-transform: uppercase;
+  padding-bottom: 1rem;
 }
 
 .project-card__description {
   font-size: 20px;
   text-transform: uppercase;
+  padding-bottom: 1rem;
 }
 
 .project-image-container {
@@ -73,15 +72,12 @@
   .project-card-container {
     display: grid;
     grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: none;
+    margin-top: 4rem;
+  }
 
-    border: 2px solid green;
-    padding-top: 4rem;
-    border: 2px solid green;
-  }
-  .project-description-container {
+  /* .project-description-container {
     width: 400px;
-  }
+  } */
   .project-card__description {
     grid-column-start: 1;
     grid-column-end: 5;
@@ -93,11 +89,12 @@
     grid-template-rows: none;
     position: relative;
     grid-row-start: 1;
-    border: 2px solid red;
   }
 
   .project-card {
     height: 100px;
+    grid-column-start: 1;
+    grid-column-end: 5;
   }
 
   .project-card__image {
