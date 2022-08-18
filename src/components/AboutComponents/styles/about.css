@@ -1,40 +1,95 @@
-.about-container {
+.about-section1 {
   border: 3px solid red;
   min-height: 100vh;
   margin-top: 10rem;
-}
-
-.about-section-container {
-  border: 2px solid blue;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   column-gap: 32px;
+  grid-template-rows: min-content;
 }
 
-.about-section__title {
-  grid-column-start: 3;
-  grid-column-end: 6;
+.about-section1-number {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+.about-section1-title {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  line-height: 50px;
+  align-self: end;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.about-section1-imageContainer1 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  margin: 20px 0 20px 0;
+  height: 500px;
+  background: lightgray;
+}
+
+.about-section1-imageContainer1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-section1-city {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  line-height: 50px;
+  font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 56px;
-  justify-self: center;
 }
 
-.about-section__image {
-  grid-column-start: 2;
-  grid-column-end: 7;
-  height: 400px;
+.about-section1 p {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  font-size: 20px;
+  padding-top: 1.5rem;
+  line-height: 26.4px;
 }
 
-.about-section__image img {
+.about-section1-imageContainer2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  height: 450px;
+  padding-top: 3rem;
+}
+
+.about-section1-imageContainer2 img {
   object-fit: cover;
   width: 100%;
   height: 100%;
 }
 
-.about-section-container p {
-  grid-column-start: 2;
-  grid-column-end: 7;
-  font-size: 20px;
-  padding-top: 1.5rem;
+/* services section */
+.about-section2 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: min-content;
+  border: 2px solid blue;
+}
+
+.about-section2-number {
+  grid-column-start: 1;
+}
+
+.about-section2-title {
+  grid-column-start: 1;
+}
+
+.about-section2 p {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.about-section2__serviceCards {
+  grid-column-start: 1;
+  grid-column-end: 8;
 }
