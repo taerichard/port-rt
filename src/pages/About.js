@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "../components/AboutComponents/styles/about.css";
 import myImage from "../images/about/me2.jpg";
 import mainImage from "../images/about/main.jpg";
-import ServiceCard from "../components/AboutComponents/aboutCard/AboutCard.js";
+import { aboutServiceData } from "../components/AboutComponents/aboutServicesCard/aboutServiceData";
+import AboutServiceCard from "../components/AboutComponents/aboutServicesCard/AboutServiceCard";
 
 const About = () => {
   return (
@@ -40,12 +41,15 @@ const About = () => {
       <div className="about-section2">
         <h4 className="about-section2-number">02/</h4>
         <h3 className="about-section2-title">services</h3>
-        <p>
+        {/* <p>
           I plan, design, and test front end applications. I deliver strong and
           user-friendly designs.
-        </p>
+        </p> */}
+        <div className="about-section2-services"></div>
         <div className="about-section2__serviceCards">
-          <ServiceCard />
+          {aboutServiceData.map(({ title, description }) => {
+            return <AboutServiceCard title={title} description={description} />;
+          })}
         </div>
       </div>
       <div className="about-section3">
