@@ -4,7 +4,8 @@ import myImage from "../images/about/me2.jpg";
 import mainImage from "../images/about/main.jpg";
 import { aboutServiceData } from "../components/AboutComponents/aboutServicesCard/aboutServiceData";
 import AboutServiceCard from "../components/AboutComponents/aboutServicesCard/AboutServiceCard";
-
+import ContactContent from "../components/HomeComponents/ContactContent";
+import "../components/HomeComponents/styles/contactContentStyles.css";
 const About = () => {
   return (
     <div className="about-container">
@@ -53,9 +54,10 @@ const About = () => {
         </div>
       </div>
       <div className="about-section3">
-        <h4>contact me</h4>
-        <h4>design & development</h4>
-        <h3>taerichard@gmail.com</h3>
+        <h3 className="about-section3-number">03/</h3>
+        <h4 className="about-section3-title">contact me</h4>
+        <h4 className="about-section3-title2">design & development</h4>
+        <h3 className="about-section3-email">taerichard@gmail.com</h3>
       </div>
     </div>
   );

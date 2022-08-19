@@ -1,5 +1,4 @@
 .about-section1 {
-  border: 3px solid red;
   min-height: 100vh;
   margin-top: 10rem;
   display: grid;
@@ -73,7 +72,7 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: min-content;
-  border: 2px solid blue;
+
   margin-top: 15rem;
 }
 
@@ -91,7 +90,7 @@
   line-height: 50px;
   align-self: end;
   font-weight: 500;
-  padding-bottom: 10px;
+  padding-bottom: 5rem;
 }
 
 .about-section2 p {
@@ -102,4 +101,47 @@
 .about-section2__serviceCards {
   grid-column-start: 1;
   grid-column-end: 8;
+}
+
+/* about-section3 */
+.about-section3 {
+  grid-template-rows: min-content;
+  column-gap: 32px;
+  margin-top: 15rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.about-section3-number {
+  grid-column-start: 1;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.about-section3-title {
+  grid-column-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 50px;
+  align-self: end;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.about-section3-title2 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.about-section3-email {
+  grid-column-start: 1;
+  grid-column-end: 8;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 500;
 }
