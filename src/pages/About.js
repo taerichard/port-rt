@@ -1,84 +1,66 @@
 import React, { useState } from "react";
 import "../components/AboutComponents/styles/about.css";
-import Accordion from "../components/AboutComponents/accordion/Accordion";
-import { accordionData } from "../components/AboutComponents/accordion/accordionData";
-import "../components/AboutComponents/styles/accordion.css";
-import HobbyButton from "../components/AboutComponents/hobbyButton/HobbyButton";
-import { hobbyButtonData } from "../components/AboutComponents/hobbyButton/hobbyButtonData";
-import officeImage from "../images/about/office.jpg";
-
+import myImage from "../images/about/me2.jpg";
+import mainImage from "../images/about/main.jpg";
+import { aboutServiceData } from "../components/AboutComponents/aboutServicesCard/aboutServiceData";
+import AboutServiceCard from "../components/AboutComponents/aboutServicesCard/AboutServiceCard";
+import ContactContent from "../components/HomeComponents/ContactContent";
+import "../components/HomeComponents/styles/contactContentStyles.css";
 const About = () => {
-  const [hobbyImg, setHobbyImg] = useState([hobbyButtonData.src]);
-
-  const displayImage = (event) => {
-    console.log(event);
-  };
-
   return (
     <div className="about-container">
-      <div className="about-image-container">
-        <h4 className="num">01/</h4>
-        <span className="title">Ui developer</span>
-        <div className="about-image__1">
-          <img className="" src={officeImage} />
+      <div className="about-section1">
+        <h4 className="about-section1-number">01/</h4>
+        <h3 className="about-section1-title">
+          ui <br />
+          developer
+        </h3>
+        <div className="about-section1-imageContainer1">
+          <img src={mainImage} />
         </div>
-        <span className="about-location">
-          Located
+        <h3 className="about-section1-city">
+          Seattle,
           <br />
-          Seattle,WA
-        </span>
+          Washington
+        </h3>
+        <p>My name is Richard Tae.</p>
+        <br />
         <p>
-          I'm a Front end developer with a passion for creating immersive user
-          experiences.
-          <br />
-          <br />
-          Recently, graduated with a Bachelor of Applied Science in Mobile
-          Application Development. I create web experiences through user-centric
-          designs. My projects include collaboration with people and independent
-          work.
-          <br />
-          <br />
-          Each project, I take it as an opportunity to learn new concepts and
-          create lasting relationships.
+          I am a front end developer with a passion for web design. Recently,
+          graduated with a bachelors in Mobile Application Development. My
+          projects include collaboration, client, and personal work.
         </p>
-        <div className="about-image__2">
-          <img />
+        <br />
+        <p>
+          Each project I take it as an opportunity to learn new concepts and
+          create relationships
+        </p>
+        <div className="about-section1-imageContainer2">
+          <img src={myImage} />
         </div>
       </div>
-      <div className="services-container">
-        <h4 className="num">02/</h4>
-        <span className="title">SERVICES</span>
-        <div className="accordion-container">
-          {accordionData.map(({ title, content }) => {
-            return <Accordion title={title} content={content} />;
+      <div className="about-section2">
+        <h4 className="about-section2-number">02/</h4>
+        <h3 className="about-section2-title">services</h3>
+        {/* <p>
+          I plan, design, and test front end applications. I deliver strong and
+          user-friendly designs.
+        </p> */}
+        <div className="about-section2-services"></div>
+        <div className="about-section2__serviceCards">
+          {aboutServiceData.map(({ title, description }) => {
+            return <AboutServiceCard title={title} description={description} />;
           })}
         </div>
       </div>
-      <div className="personal-container">
-        <div className="personal-button-container">
-          <h4 className="num">03/ABOUT</h4>
-
-          {hobbyButtonData.map((img) => (
-            <HobbyButton
-              title={img.title}
-              onClick={(event) => displayImage(event.target.src)}
-            />
-          ))}
-        </div>
-        <div className="personal-image-container">
-          <img src={hobbyImg} />
-        </div>
+      <div className="about-section3">
+        <h3 className="about-section3-number">03/</h3>
+        <h4 className="about-section3-title">contact me</h4>
+        <h4 className="about-section3-title2">design & development</h4>
+        <h3 className="about-section3-email">taerichard@gmail.com</h3>
       </div>
     </div>
   );
 };
 
 export default About;
-
-{
-  /* <div className="personal-hobbies">
-<HobbyButton title="Fitness" />
-<HobbyButton title="Travelling" />
-<HobbyButton onClick={showDogImage} title="Hanging with my dawg" />
-</div> */
-}

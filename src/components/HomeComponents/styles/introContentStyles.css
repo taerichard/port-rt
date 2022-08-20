@@ -69,8 +69,8 @@
     grid-template-columns: repeat(13, 1fr);
   }
   .title {
-    position: relative;
-    top: -15px;
+    /* position: relative;
+    top: -15px; */
   }
   .intro-message-1 {
     grid-column-start: 4;
