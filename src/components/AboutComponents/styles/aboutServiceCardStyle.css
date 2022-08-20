@@ -1,5 +1,5 @@
 .aboutServiceCard-item {
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
 }
 .aboutServiceCard-item button {
   background-color: rgba(0, 0, 0, 0);
@@ -61,11 +61,12 @@
 .aboutServiceCard-item button span::after {
   background: #000;
   content: "";
-  height: 2px;
+  height: 1px;
   left: 0;
   position: absolute;
   top: 10px;
-  width: 21px;
+  /* width: 21px; */
+  width: 18px;
   transition: transform 500ms ease;
 }
 /* .aboutServiceCard-item button span:after {

@@ -15,7 +15,7 @@ const AboutServiceCard = ({ title, description }) => {
       </button>
       {isActive && (
         <div className="aboutServiceCard-active">
-          <p>I am active now</p>
+          <p>{description}</p>
         </div>
       )}
     </div>
