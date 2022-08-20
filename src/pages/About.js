@@ -27,13 +27,14 @@ const About = () => {
         <br />
         <p>
           I am a front end developer with a passion for web design. Recently,
-          graduated with a bachelors in Mobile Application Development. My
-          projects include collaboration, client, and personal work.
+          graduated with a bachelors in Software Development. My projects
+          include personal and client work. I have experience in team
+          collaboration.
         </p>
         <br />
         <p>
-          Each project I take it as an opportunity to learn new concepts and
-          create relationships
+          I take each project as an opportunity to learn new concepts and create
+          relationships.
         </p>
         <div className="about-section1-imageContainer2">
           <img src={myImage} />
