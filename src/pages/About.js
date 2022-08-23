@@ -19,21 +19,22 @@ const About = () => {
           <img src={mainImage} />
         </div>
         <h3 className="about-section1-city">
-          Seattle,
+          Seattle
           <br />
           Washington
         </h3>
-        <p>My name is Richard Tae.</p>
+        <p className="about-section1__name">My name is Richard Tae.</p>
         <br />
-        <p>
+        <p className="about-section1__bio">
           I am a front end developer with a passion for web design. Recently,
-          graduated with a bachelors in Mobile Application Development. My
-          projects include collaboration, client, and personal work.
+          graduated with a bachelors in Software Development. My projects
+          include personal and client work. I have experience in team
+          collaboration.
         </p>
         <br />
-        <p>
-          Each project I take it as an opportunity to learn new concepts and
-          create relationships
+        <p className="about-section1__bio2">
+          I take each project as an opportunity to learn new concepts and create
+          relationships.
         </p>
         <div className="about-section1-imageContainer2">
           <img src={myImage} />
@@ -57,7 +58,13 @@ const About = () => {
         <h3 className="about-section3-number">03/</h3>
         <h4 className="about-section3-title">contact me</h4>
         <h4 className="about-section3-title2">design & development</h4>
-        <h3 className="about-section3-email">taerichard@gmail.com</h3>
+        <h3 className="about-section3-email">
+          tae
+          <br />
+          richard@
+          <br />
+          gmail.com
+        </h3>
       </div>
     </div>
   );
