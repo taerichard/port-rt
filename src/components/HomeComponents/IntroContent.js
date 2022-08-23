@@ -24,10 +24,9 @@ const IntroContent = () => {
       </div>
       <div className="intro-message-2">
         <p className="intro-message-2__text">
-          Recently, graduated with a Bachelors of Applied Science in Mobile
-          Application Development. I create web experiences through user-centric
-          designs. My projects include collaboration with people and independent
-          work.
+          Recently, graduated with a Bachelors of Applied Science in Software
+          Development. I create web experiences through user-centric designs. My
+          projects include collaboration with people and independent work.
         </p>
         <p className="intro-message-2__text">
           With my UI experience, I build strong and user-friendly web designs
