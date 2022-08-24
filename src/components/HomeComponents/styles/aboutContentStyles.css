@@ -13,7 +13,6 @@
   font-weight: 500;
 }
 .aboutContent-title-2 {
-  justify-self: center;
   grid-column-start: 4;
   grid-column-end: 5;
 }
@@ -23,19 +22,20 @@
 }
 
 .aboutContent-title-2 h4 {
-  font-size: 20px;
+  font-size: 56px;
   font-weight: 500;
 }
 
 .aboutContent-hobbies {
   margin-top: 1rem;
   grid-column-start: 1;
-  grid-column-end: 6;
+  grid-column-end: 2;
 }
 
 .aboutContent-hobbies h3 {
   text-transform: uppercase;
-  font-size: 3.5rem;
+  padding-bottom: 0.3rem;
+  font-size: 2.5rem;
   font-weight: 500;
   line-height: 50px;
   display: inline-block;
@@ -43,9 +43,10 @@
 
 /* aboutContent image*/
 .aboutContent-image {
-  height: 350px;
-  width: 500px;
+  grid-column-start: 2;
+  grid-column-end: 7;
   padding: 1rem 1rem 1rem 0;
+  max-height: 500px;
 }
 
 .aboutContent-image img {
@@ -56,9 +57,9 @@
 }
 
 .aboutContent-text {
-  margin-top: 1.5rem;
-  grid-column-start: 1;
-  grid-column-end: 6;
+  border: 2px solid blue;
+  max-width: 300px;
+  min-width: 150px;
 }
 
 .aboutContent-text p {
@@ -66,14 +67,31 @@
   line-height: 20px;
 }
 
-.aboutContent-button {
-  margin-top: 5rem;
-  grid-column-start: 4;
+.aboutContent-text-1 {
+  grid-row-start: 3;
+  grid-column-start: 2;
   grid-column-end: 5;
+  height: min-content;
+  height: 135px;
+  border: 2px solid red;
+}
+
+.aboutContent-text-1 p {
+  width: 100%;
+  min-height: 50px;
+  font-size: 30px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.aboutContent-button {
+  margin-top: 10rem;
+  grid-column-start: 4;
+  grid-row-start: 5;
   background: #494b4e;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -155,6 +173,7 @@
 
   .aboutContent-text-1 {
     width: 50%;
+    border: 2px solid blue;
   }
   .aboutContent-text p {
     font-size: 22px;

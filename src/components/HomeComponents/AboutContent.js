@@ -17,32 +17,41 @@ const AboutContent = () => {
       </div>
       <div className="aboutContent-hobbies">
         <h3>travel.</h3>
-        <div className="aboutContent-image">
-          <img src={travelImage} />
-        </div>
-        <h3>fitness.</h3>
+        <br />
+        <h3>lifting.</h3>
         <br />
         <h3>hiking.</h3>
+        <br />
+        <h3>music.</h3>
+        <br />
+        <h3>running.</h3>
+        <br />
+        <h3>food.</h3>
+        <br />
+        <h3>boxing.</h3> <br />
+        <h3>running.</h3> <br />
+        <h3>running.</h3> <br />
       </div>
-      <div className="aboutContent-text">
+      <div className="aboutContent-image">
+        <img src={travelImage} />
         <div className="aboutContent-text-1">
           <p>
-            When I am not web designing, I usually play sports, hang out with my
-            dogs, or skip rocks at the lake to beat the world record.
+            When I am not web designing, I'm usually doing some kind of fitness,
+            hanging out with my dogs, or eating.
           </p>
-        </div>
-        <div className="aboutContent-text-2">
-          <h3>
-            <Link className="aboutContent-text-2__button" to="about">
-              More About Me
-            </Link>
-          </h3>
         </div>
       </div>
       <div className="aboutContent-button">
         <Link className="aboutContent-button__text" to="about">
           More
         </Link>
+      </div>
+      <div className="aboutContent-text-2">
+        <h3>
+          <Link className="aboutContent-text-2__button" to="about">
+            More About Me
+          </Link>
+        </h3>
       </div>
     </div>
   );
