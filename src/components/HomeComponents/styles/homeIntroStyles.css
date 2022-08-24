@@ -31,7 +31,7 @@
   min-width: 350px;
   justify-self: left;
   height: 470px;
-  transition-duration: 2s;
+  transition-duration: 1s;
   transition-property: min-width, height;
   transition-timing-function: ease-in-out;
 }
