@@ -17,7 +17,9 @@ const ProjectModal = ({
       <span className="projectModal-button" onClick={onClose}>
         <h3>close</h3>
       </span>
-      <p className="projectModal-desc">{description}</p>
+      <div className="projectModal-desc-container">
+        <p className="projectModal-desc">{description}</p>
+      </div>
       <div className="projectModal-information">
         <h2 className="projectModal-desc__title">Project Information</h2>
         <div className="projectModal-information__role">
