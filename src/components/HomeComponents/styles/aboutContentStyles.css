@@ -1,0 +1,264 @@
+.aboutContent-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 5rem;
+  max-width: 750px;
+}
+
+.aboutContent-title {
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+
+.aboutContent-title h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+.aboutContent-title h4 {
+  padding-top: 2rem;
+  font-size: 56px;
+  font-weight: 500;
+}
+.aboutContent-title-2 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 2;
+}
+
+.aboutContent-title-3 {
+  display: none;
+}
+
+.aboutContent-title-4 {
+  display: none;
+}
+
+.aboutContent-title-2 h4 {
+  font-size: 56px;
+  font-weight: 500;
+}
+
+.aboutContent-hobbies {
+  grid-row-start: 3;
+  grid-column-start: 7;
+}
+
+.aboutContent-hobbies h3 {
+  text-transform: uppercase;
+  padding-bottom: 0.3rem;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 50px;
+  display: inline-block;
+}
+
+/* aboutContent image*/
+.aboutContent-image {
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  padding: 1rem 1rem 1rem 0;
+  max-height: 500px;
+}
+
+.aboutContent-image img {
+  filter: grayscale(60%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aboutContent-text {
+  border: 2px solid blue;
+  max-width: 300px;
+  min-width: 150px;
+}
+
+.aboutContent-text p {
+  font-size: 1.2rem;
+  line-height: 20px;
+}
+
+.aboutContent-text-1 {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 7;
+  height: min-content;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutContent-text-1 p {
+  width: 100%;
+  min-height: 50px;
+  font-size: 22px;
+  overflow: hidden;
+  max-width: 450px;
+}
+
+.aboutContent-button {
+  margin-top: 2rem;
+  align-self: center;
+  background: #494b4e;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.aboutContent-button__text {
+  color: #e1dfdd;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.aboutContent-text__button {
+  display: none;
+}
+
+.aboutContent-text-2 {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .aboutContent-container {
+    margin-top: 20rem;
+    grid-template-columns: repeat(13, 1fr);
+    max-width: 100%;
+    border: 2px solid red;
+  }
+
+  .aboutContent-title {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+
+  .aboutContent-title h4 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .aboutContent-title-2 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+  }
+
+  .aboutContent-title-2 h4 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  /* design and development title */
+  .aboutContent-title-3 {
+    display: block;
+    grid-column-start: 7;
+    grid-column-end: 8;
+    align-self: flex-end;
+    border: 2px solid green;
+    width: min-content;
+    min-width: 370px;
+    grid-template-rows: min-content;
+  }
+
+  .aboutContent-title-3 h4 {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  /* ui development title */
+
+  .aboutContent-title-4 {
+    display: block;
+    grid-column-start: 10;
+    grid-column-end: 14;
+    justify-self: end;
+    align-self: flex-end;
+    border: 2px solid red;
+    min-width: 250px;
+  }
+
+  .aboutContent-title-4 h4 {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  /* image container*/
+  .aboutContent-image {
+    grid-column-start: 3;
+    grid-column-end: 9;
+  }
+
+  .aboutContent-hobbies {
+    grid-column-start: 8;
+    grid-row-start: 4;
+    margin-top: 0;
+    width: 500px;
+  }
+
+  .aboutContent-hobbies .aboutContent-image {
+    /* width: 500px;
+    height: 420px; */
+  }
+
+  .aboutContent-hobbies h3 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  .aboutContent-image img {
+    object-fit: cover;
+  }
+
+  .aboutContent-text {
+    grid-column-start: 3;
+    grid-column-end: 13;
+    width: 650px;
+    height: 200px;
+  }
+
+  .aboutContent-text-1 {
+    width: 50%;
+    border: 2px solid blue;
+  }
+  .aboutContent-text p {
+    font-size: 22px;
+    line-height: 26px;
+    max-width: 300px;
+  }
+
+  .aboutContent-text__button {
+    display: inline-block;
+  }
+
+  .aboutContent-text-1,
+  .aboutContent-text-2 {
+    display: inline-block;
+  }
+
+  .aboutContent-text-2 {
+    /* position: relative; */
+    text-align: right;
+  }
+
+  .aboutContent-text-2__button {
+    text-decoration: none;
+    color: inherit;
+    font-size: 22px;
+    font-weight: 500;
+    border-bottom: 2px solid black;
+    padding-bottom: 1px;
+  }
+  .aboutContent-button {
+    display: none;
+  }
+
+  .aboutContent-title-2 {
+    display: none;
+  }
+}

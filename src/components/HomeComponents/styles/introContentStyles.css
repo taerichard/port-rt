@@ -1,0 +1,120 @@
+.intro-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.title {
+  padding-bottom: 2rem;
+}
+
+.title h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.intro-message-1 {
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+
+.intro-message-1__text {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1.25;
+  padding-bottom: 2rem;
+}
+
+.intro-message-2__title {
+  display: none;
+}
+
+.intro-message-2 {
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+
+.intro-message-2__text {
+  font-size: 20px;
+  padding-bottom: 2rem;
+}
+
+.intro-button-container {
+  padding-top: 6rem;
+  grid-column-start: 4;
+}
+
+.intro-button {
+  background: #494b4e;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.intro-button__text {
+  color: #e1dfdd;
+  font-size: 2rem;
+  text-decoration: none;
+  transition-duration: 1s;
+  transition-property: min-width;
+  transition-timing-function: ease-in-out;
+}
+
+.intro-button-large__text {
+  display: none;
+}
+
+@media (min-width: 1100px) {
+  .intro-container {
+    grid-template-columns: repeat(13, 1fr);
+  }
+
+  .intro-message-1 {
+    grid-column-start: 4;
+    grid-column-end: 11;
+  }
+  .intro-message-2 {
+    padding-top: 5rem;
+    grid-column-start: 8;
+    grid-column-end: 11;
+  }
+
+  .intro-message-2__title {
+    padding-top: 5rem;
+    height: auto;
+    display: block;
+    grid-column-start: 4;
+    grid-column-end: 7;
+  }
+
+  .intro-message-2__title h4 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .intro-button-container {
+    display: none;
+  }
+  .intro-message-2 .intro-button-large__text {
+    display: block;
+    grid-column-start: 4;
+    grid-column-end: -1;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 3rem;
+    position: relative;
+    min-width: 100px;
+  }
+
+  .intro-button__text {
+    color: black;
+    font-size: 22px;
+    border-bottom: 2px solid rgb(88, 86, 86);
+  }
+  .into-button__text:hover{
+    
+  }
+}

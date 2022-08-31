@@ -1,0 +1,311 @@
+.about-section1 {
+  min-height: 100vh;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 32px;
+  grid-template-rows: min-content;
+}
+
+.about-section1-number {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+.about-section1-title {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  line-height: 50px;
+  align-self: end;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.about-section1-imageContainer1 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  margin: 20px 0 20px 0;
+  height: 500px;
+  background: lightgray;
+  max-width: 495px;
+}
+
+.about-section1-imageContainer1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-section1-city {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  line-height: 50px;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.about-section1 p {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  font-size: 20px;
+  padding-top: 1.5rem;
+  line-height: 26.4px;
+}
+
+.about-section1-imageContainer2 {
+  grid-column-start: 1;
+  /* grid-column-end: 5; */
+  height: 450px;
+  min-width: 275px;
+  max-width: 290px;
+  padding-top: 3rem;
+}
+
+.about-section1-imageContainer2 img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* services section */
+.about-section2 {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: min-content;
+  margin-top: 15rem;
+}
+
+.about-section2-number {
+  grid-column-start: 1;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.about-section2-title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  line-height: 50px;
+  align-self: end;
+  font-weight: 500;
+  padding-bottom: 5rem;
+}
+
+.about-section2 p {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.about-section2__serviceCards {
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+
+/* about-section3 */
+.about-section3 {
+  grid-template-rows: min-content;
+  column-gap: 32px;
+  margin-top: 15rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 15rem;
+}
+
+.about-section3-number {
+  grid-column-start: 1;
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 2rem;
+}
+
+.about-section3-title {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 50px;
+  align-self: end;
+  font-weight: 500;
+}
+
+.about-section3-title2 {
+  grid-column-start: 5;
+  grid-column-end: 8;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  min-width: 350px;
+}
+.about-section3-email {
+  margin-top: 8rem;
+  justify-self: center;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.about-section3 > * {
+  line-height: 50px;
+}
+
+@media (min-width: 1100px) {
+  .about-section1 {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 32px;
+    grid-template-rows: min-content;
+    grid-template-rows: min-content;
+  }
+
+  .about-section1-title {
+    grid-column-start: 2;
+
+    font-size: 6rem;
+    line-height: 75px;
+  }
+
+  .about-section1-imageContainer1 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    height: 700px;
+    min-width: 700px;
+  }
+
+  .about-section1-city {
+    grid-column-start: 2;
+    font-size: 6rem;
+    line-height: 75px;
+    font-weight: 500;
+  }
+
+  .about-section1 .about-section1__name {
+    grid-column-start: 2;
+    min-width: 420px;
+  }
+
+  .about-section1 .about-section1__bio {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    min-width: 500px;
+  }
+
+  .about-section1 .about-section1__name,
+  .about-section1 .about-section1__bio {
+    margin-top: 8rem;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .about-section1 .about-section1__bio2 {
+    margin-top: 2rem;
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    font-size: 30px;
+    line-height: 40px;
+    min-width: 500px;
+  }
+
+  .about-section1-imageContainer2 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 6;
+
+    height: 600px;
+    min-width: 400px;
+    padding-top: 10rem;
+
+    /* max-height: 400px; */
+    /* min-width: 300px; */
+  }
+
+  .about-section1-imageContainer2 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  /*Services Section*/
+
+  .about-section2 {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: min-content;
+    margin-top: 15rem;
+    column-gap: 32px;
+  }
+
+  .about-section2-number {
+    grid-column-start: 1;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 2rem;
+  }
+
+  .about-section2-title {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 10rem;
+  }
+
+  .about-section2__serviceCards {
+    grid-column-start: 4;
+    grid-column-end: 12;
+  }
+
+  /* Contact Section */
+  .about-section3 {
+    grid-template-rows: min-content;
+    column-gap: 32px;
+    margin-top: 15rem;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    margin-bottom: 15rem;
+  }
+
+  .about-section3-title {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 50px;
+    font-weight: 500;
+    align-self: start;
+    min-width: 260px;
+  }
+
+  .about-section3-title2 {
+    grid-column-start: 9;
+    grid-column-end: 14;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    min-width: 490px;
+  }
+
+  .about-section3-email {
+    margin-top: 8rem;
+    justify-self: center;
+    text-align: center;
+    grid-column-start: 5;
+    grid-column-end: 10;
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .about-section3 > * {
+    line-height: 75px;
+  }
+}
