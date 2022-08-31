@@ -9,7 +9,7 @@ const largeHeader = (
       <a href="/">Richard Tae</a>
     </div>
     <div className="header-role">
-      <a>UI Developer</a>
+      <span>UI Developer</span>
     </div>
     <div className="header-location">
       <p>Seattle, Washington</p>

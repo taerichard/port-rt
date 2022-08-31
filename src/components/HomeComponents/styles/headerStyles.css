@@ -145,6 +145,11 @@ body:not(.header) {
   grid-column-end: 6;
 }
 
+.header-role span {
+  font-size: 1.4rem;
+  line-height: 25px;
+}
+
 .header-location {
   grid-column-start: 6;
   grid-column-end: 8;
