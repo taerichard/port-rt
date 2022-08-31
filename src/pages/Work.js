@@ -29,6 +29,8 @@ const Work = () => {
               title={project.title}
               description={project.description}
               imageSrc={project.imageSrc}
+              role={project.role}
+              technology={project.technology}
             />
           );
         })}

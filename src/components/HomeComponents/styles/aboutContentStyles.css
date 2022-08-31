@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   margin-top: 5rem;
+  max-width: 750px;
 }
 
 .aboutContent-title {
@@ -93,10 +94,11 @@
   min-height: 50px;
   font-size: 22px;
   overflow: hidden;
+  max-width: 450px;
 }
 
 .aboutContent-button {
-  margin-top: auto;
+  margin-top: 2rem;
   align-self: center;
   background: #494b4e;
   border-radius: 50%;
@@ -126,12 +128,14 @@
   .aboutContent-container {
     margin-top: 20rem;
     grid-template-columns: repeat(13, 1fr);
+    max-width: 100%;
+    border: 2px solid red;
   }
 
   .aboutContent-title {
     grid-row-start: 1;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 4;
   }
 
   .aboutContent-title h4 {
@@ -153,8 +157,12 @@
   .aboutContent-title-3 {
     display: block;
     grid-column-start: 7;
-    grid-column-end: 10;
+    grid-column-end: 8;
     align-self: flex-end;
+    border: 2px solid green;
+    width: min-content;
+    min-width: 370px;
+    grid-template-rows: min-content;
   }
 
   .aboutContent-title-3 h4 {
@@ -167,9 +175,11 @@
   .aboutContent-title-4 {
     display: block;
     grid-column-start: 10;
-    grid-column-end: -1;
-    align-self: flex-end;
+    grid-column-end: 14;
     justify-self: end;
+    align-self: flex-end;
+    border: 2px solid red;
+    min-width: 250px;
   }
 
   .aboutContent-title-4 h4 {
@@ -186,7 +196,7 @@
 
   .aboutContent-hobbies {
     grid-column-start: 8;
-    grid-row-start: 2;
+    grid-row-start: 4;
     margin-top: 0;
     width: 500px;
   }

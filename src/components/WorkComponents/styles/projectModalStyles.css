@@ -1,17 +1,91 @@
 .projectModal-container {
-  width: 100vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
   height: 100vh;
-  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
-  background: #fff;
-  background-color: blue;
-  color: #000;
+  background-color: #fff;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  position: absolute !important;
-  z-index: 2000;
-  border-radius: 10px;
+  grid-template-columns: repeat(8, 1fr);
+  padding: 32px 30px 32px 30px;
+  z-index: 1000;
+  column-gap: 32px;
+  grid-template-rows: min-content;
 }
 
-.projectModal-col- {
-  grid-column-start: 2;
+/* Title */
+.projectModal-title {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Close Button */
+.projectModal-button {
+  grid-column-start: 8;
+  justify-self: flex-end;
+}
+
+.projectModal-button h3 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.projectModal-button:hover {
+  cursor: pointer;
+}
+
+.projectModal-desc__title {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Project Description */
+.projectModal-desc {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  font-size: 30px;
+  border: 2px solid red;
+  height: min-content;
+}
+
+/* Project Modal Information */
+.projectModal-information {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  border: 2px solid purple;
+}
+
+/* GRID  Project Information Title */
+.projectModal-information h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Role Row  */
+.projectModal-information__role {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectModal-information__role h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Tech Row  */
+.projectModal-information__tech {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projectModal-information__tech h4 {
+  font-size: 20px;
+  font-weight: 500;
 }

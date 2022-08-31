@@ -26,7 +26,14 @@ const ProjectCard = (props) => {
         </div>
       </div>
       <div className="projectCard-projetModal-container">
-        <ProjectModal open={isOpen} onClose={() => setIsOpen(false)}>
+        <ProjectModal
+          open={isOpen}
+          onClose={() => setIsOpen(false)}
+          title={props.title}
+          description={props.description}
+          role={props.role}
+          technology={props.technology}
+        >
           Hello
         </ProjectModal>
       </div>
