@@ -2,11 +2,6 @@ import React, { useState } from "react";
 import ProjectModal from "./ProjectModal";
 import "./styles/projectCardStyles.css";
 
-const BUTTON_WRAPPER_STYLES = {
-  position: "relative",
-  zIndex: 1,
-};
-
 const ProjectCard = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,14 +14,22 @@ const ProjectCard = (props) => {
 
       <div className="project-image-container">
         <img className="project-card__image" src={props.imageSrc} />
-        <div className="project-card-button-container">
-          <p style={BUTTON_WRAPPER_STYLES} onClick={() => setIsOpen(true)}>
-            More
-          </p>
+        <div
+          className="project-card-button-container"
+          onClick={() => setIsOpen(true)}
+        >
+          <p>More</p>
         </div>
       </div>
       <div className="projectCard-projetModal-container">
-        <ProjectModal open={isOpen} onClose={() => setIsOpen(false)}>
+        <ProjectModal
+          open={isOpen}
+          onClose={() => setIsOpen(false)}
+          title={props.title}
+          description={props.description}
+          role={props.role}
+          technology={props.technology}
+        >
           Hello
         </ProjectModal>
       </div>

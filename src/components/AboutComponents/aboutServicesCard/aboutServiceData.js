@@ -6,8 +6,7 @@ export const aboutServiceData = [
   },
   {
     title: "Web Design",
-    description:
-      "I build scalable websites from scratch that fit seamlessly with design. I deliver strong and user friendly designs.",
+    description: "",
   },
 
   { title: "UX Research", description: "something" },

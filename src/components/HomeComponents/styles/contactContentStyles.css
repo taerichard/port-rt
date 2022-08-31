@@ -78,8 +78,8 @@
   }
 
   .contactContent-contact a .contactContent-email {
-    font-size: 10rem;
-    line-height: 7rem;
+    font-size: 7rem;
+    line-height: 6rem;
     text-decoration: none;
   }
 }

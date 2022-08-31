@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/projectContentStyles.css";
+import homeProjectImage from "../../images/home/homeProjectImage.jpg";
 
 const ProjectContent = () => {
   return (
@@ -24,7 +25,7 @@ const ProjectContent = () => {
         </h3>
       </div>
       <div className="project-img-container">
-        <img />
+        <img src={homeProjectImage} />
       </div>
       <div className="project-button">
         <Link className="project-button__text" to="work">
