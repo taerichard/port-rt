@@ -14,9 +14,9 @@ export const ProjectData = [
     id: 2,
     title: "Get-Grub",
     description:
-      "Mobile Application to search and save restaurant information.",
+      "This is a Mobile Application that uses Yelp's business API to search restaurants from the user's location. My role was to develop the front-end with CSS and request Yelp's business API endpoints to display restaurant information in the UI. ",
     imageSrc: getGrubImage,
     role: "Fuck Stack Developer",
-    technology: "React Native",
+    technology: "React Native, CSS",
   },
 ];

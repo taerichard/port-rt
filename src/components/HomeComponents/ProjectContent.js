@@ -7,10 +7,16 @@ const ProjectContent = () => {
   return (
     <div className="project-container">
       <div className="project-title">
-        <h4>02/</h4>
+        <h3>02/</h3>
+        <h4>
+          Recent <br /> Project
+        </h4>
       </div>
       <div className="project-title-2">
-        <h4>Recent Projects</h4>
+        <h4>
+          Design & <br />
+          Development
+        </h4>
       </div>
       <div className="project-title-3">
         <h4>UI Developer</h4>
