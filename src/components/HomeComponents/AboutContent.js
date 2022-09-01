@@ -8,13 +8,22 @@ const AboutContent = () => {
     <div className="aboutContent-container">
       <div className="aboutContent-title">
         <h3>03/</h3>
-        <h4>ABOUT ME</h4>
+        <h4>
+          ABOUT <br />
+          ME
+        </h4>
       </div>
       <div className="aboutContent-title-3">
-        <h4>Design & Development</h4>
+        <h4>
+          Design & <br />
+          Development
+        </h4>
       </div>
       <div className="aboutContent-title-4">
-        <h4>ui developer</h4>
+        <h4>
+          ui <br />
+          developer
+        </h4>
       </div>
       <div className="aboutContent-hobbies">
         <div className="aboutContent-hobbies1">
@@ -31,14 +40,14 @@ const AboutContent = () => {
           <p>
             I like to be active and stay outside when I am not developing. I am
             a fitness enthusiast and a certified trainer. I enjoy going on
-            hidden trails with my dogs. Oh, and my favorite activity is to eat
-            food.
+            hidden trails with my dogs and looking for food that I've never
+            tried.
           </p>
-          <h3>
+          <h4>
             <Link className="aboutContent-text-2__button" to="about">
               More About Me
             </Link>
-          </h3>
+          </h4>
         </div>
       </div>
       <div className="aboutContent-image">
@@ -48,7 +57,7 @@ const AboutContent = () => {
         <p>
           I like to be active and stay outside when I am not developing. I am a
           fitness enthusiast and a certified trainer. I enjoy going on hidden
-          trails with my dogs. Oh, and my favorite activity is to eat food.
+          trails with my dogs and looking for food that I've never tried.
         </p>
         <div className="aboutContent-button">
           <Link className="aboutContent-button__text" to="about">

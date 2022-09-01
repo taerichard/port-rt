@@ -9,20 +9,22 @@
   grid-column-start: 1;
 }
 
-.contactContent-title h4 {
+.contactContent-title h3 {
   font-size: 20px;
+  font-weight: 500;
   font-weight: 500;
 }
 
-.contactContent-title-2 {
-  grid-column-start: 4;
-  grid-column-end: 4;
+.contactContent-title h4 {
+  padding-top: 32px;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 20px;
 }
 
-.contactContent-title-2 h4 {
-  font-size: 20px;
-  font-weight: 200;
-  text-transform: uppercase;
+.contactContent-title-2 {
+  display: none;
 }
 
 .contactContent-contact {
@@ -53,28 +55,42 @@
     margin-top: 20rem;
   }
 
-  .contactContent-title-3 {
-    grid-column-start: 10;
-    grid-column-end: 14;
+  .contactContent-title-2 {
+    display: block;
+    grid-column-start: 6;
+    grid-column-end: 7;
+    align-self: flex-end;
     justify-self: center;
+  }
+
+  .contactContent-title-2 h4 {
+    font-size: 25px;
+    line-height: 20px;
+    padding-top: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .contactContent-title-3 {
+    display: block;
+    grid-column-start: 11;
+    grid-column-end: 14;
+    align-self: last baseline;
   }
 
   .contactContent-title-3 h4 {
     font-size: 25px;
     font-weight: 500;
+    line-height: 20px;
     text-transform: uppercase;
   }
 
-  .contactContent-title-2 {
-    grid-column-start: 6;
-    grid-column-end: 7;
-  }
-
   .contactContent-contact {
-    grid-column-start: 4;
-    grid-column-end: 10;
+    grid-column-start: 5;
+    grid-column-end: 11;
     justify-self: center;
     margin-bottom: 12rem;
+    margin-top: 20rem;
   }
 
   .contactContent-contact a .contactContent-email {
