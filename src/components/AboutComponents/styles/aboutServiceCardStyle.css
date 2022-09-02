@@ -47,6 +47,7 @@
 .aboutServiceCard-active {
   padding-bottom: 50px;
   padding-top: 5px;
+  transition: padding-bottom 2s;
 }
 
 .aboutServiceCard-item button span {
