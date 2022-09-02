@@ -16,8 +16,9 @@
 }
 .aboutContent-title h4 {
   padding-top: 2rem;
-  font-size: 56px;
+  font-size: 25px;
   font-weight: 500;
+  line-height: 20px;
 }
 .aboutContent-title-2 {
   grid-column-start: 1;
@@ -124,23 +125,30 @@
   display: none;
 }
 
+.aboutContent-active__text {
+  display: none;
+}
+
 @media (min-width: 1100px) {
   .aboutContent-container {
     margin-top: 20rem;
     grid-template-columns: repeat(13, 1fr);
     max-width: 100%;
-    border: 2px solid red;
+    column-gap: 32px;
+    height: 100%;
   }
 
   .aboutContent-title {
     grid-row-start: 1;
     grid-column-start: 1;
     grid-column-end: 4;
+    min-width: 154px;
   }
 
   .aboutContent-title h4 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
+    line-height: 20px;
   }
 
   .aboutContent-title-2 {
@@ -159,14 +167,14 @@
     grid-column-start: 7;
     grid-column-end: 8;
     align-self: flex-end;
-    border: 2px solid green;
     width: min-content;
     min-width: 370px;
     grid-template-rows: min-content;
+    line-height: 20px;
   }
 
   .aboutContent-title-3 h4 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
     text-transform: uppercase;
   }
@@ -175,40 +183,51 @@
   .aboutContent-title-4 {
     display: block;
     grid-column-start: 10;
-    grid-column-end: 14;
+    grid-column-end: 12;
     justify-self: end;
     align-self: flex-end;
-    border: 2px solid red;
-    min-width: 250px;
+    line-height: 20px;
   }
 
   .aboutContent-title-4 h4 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
+    /* letter-spacing: 0px; */
     text-transform: uppercase;
   }
 
   /* image container*/
   .aboutContent-image {
+    margin-top: 10rem;
     grid-column-start: 3;
-    grid-column-end: 9;
+    grid-column-end: 8;
+    max-width: 900px;
+    min-height: 700px;
+    padding: 0;
+  }
+
+  .aboutContent-hobbies1 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .aboutContent-hobbies2 {
+    display: flex;
+    justify-content: space-evenly;
   }
 
   .aboutContent-hobbies {
     grid-column-start: 8;
-    grid-row-start: 4;
-    margin-top: 0;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    margin-top: 10rem;
     width: 500px;
-  }
-
-  .aboutContent-hobbies .aboutContent-image {
-    /* width: 500px;
-    height: 420px; */
+    height: 100%;
   }
 
   .aboutContent-hobbies h3 {
-    font-size: 80px;
+    font-size: 60px;
     line-height: 80px;
+    display: inline-block;
   }
 
   .aboutContent-image img {
@@ -223,8 +242,7 @@
   }
 
   .aboutContent-text-1 {
-    width: 50%;
-    border: 2px solid blue;
+    grid-column-start: 8;
   }
   .aboutContent-text p {
     font-size: 22px;
@@ -260,5 +278,28 @@
 
   .aboutContent-title-2 {
     display: none;
+  }
+  .aboutContent-text-1 {
+    display: none;
+  }
+
+  /* active text info */
+  .aboutContent-active__text {
+    display: block;
+    height: 100%;
+  }
+
+  .aboutContent-active__text h4 {
+    margin-top: 19rem;
+  }
+
+  .aboutContent-active__text p {
+    font-size: 25px;
+    padding: 25px;
+    line-height: 30px;
+  }
+
+  .aboutContent-active__text .aboutContent-text-2__button {
+    margin-left: 25px;
   }
 }

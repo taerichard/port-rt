@@ -98,3 +98,26 @@
   font-weight: 500;
   padding: 15px 15px 15px 0;
 }
+
+@media (min-width: 1100px) {
+  .projectModal-container {
+    padding: 64px 70px 70px 70px;
+  }
+
+  .projectModal-title,
+  .projectModal-button h3 {
+    font-size: 22px;
+  }
+
+  .projectModal-information .projectModal-desc__title {
+    font-size: 30px;
+  }
+
+  .projectModal-information__role h4 {
+    font-size: 30px;
+  }
+
+  .projectModal-information__tech h4 {
+    font-size: 30px;
+  }
+}
