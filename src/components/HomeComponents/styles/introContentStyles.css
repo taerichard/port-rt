@@ -44,7 +44,7 @@
 }
 
 .intro-button {
-  background: #494b4e;
+  background-color: #494b4e;
   border-radius: 50%;
   width: 150px;
   height: 150px;
@@ -114,7 +114,6 @@
     font-size: 22px;
     border-bottom: 2px solid rgb(88, 86, 86);
   }
-  .into-button__text:hover{
-    
+  .into-button__text:hover {
   }
 }
