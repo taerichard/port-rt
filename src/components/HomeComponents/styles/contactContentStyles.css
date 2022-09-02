@@ -72,10 +72,10 @@
   }
 
   .contactContent-title-3 {
-    display: block;
+    display: inline;
     grid-column-start: 11;
     grid-column-end: 14;
-    align-self: last baseline;
+    align-self: flex-end;
   }
 
   .contactContent-title-3 h4 {
