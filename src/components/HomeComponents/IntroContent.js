@@ -14,10 +14,6 @@ const IntroContent = () => {
           passion. I plan, design, and develop with modern technology, creating
           a momemt to enjoy.
         </p>
-        <p className="intro-message-1__text">
-          outside of web development, I'm either doing some kind of fitness or
-          hanging with my dog.
-        </p>
       </div>
       <div className="intro-message-2__title">
         <h4>UI Design & Development</h4>
