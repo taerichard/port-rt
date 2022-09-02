@@ -142,7 +142,8 @@ body:not(.header) {
 
 .header-role {
   grid-column-start: 4;
-  grid-column-end: 6;
+  grid-column-end: 5;
+  justify-self: center;
 }
 
 .header-role span {

@@ -4,6 +4,8 @@ export const ProjectData = [
   {
     id: 1,
     title: `Photo-Points`,
+    mainDescription:
+      "A photo uploading forum for Bothell North Creek Forest administrators and customers.",
     description:
       "I created an application for Bothell North Creek Forest administrators and customers to upload nature photos to interact. My role was to display UI elements from the backend, creating API controllers, and managing the data access layers. ",
     imageSrc: photoPointsImage,
@@ -13,6 +15,8 @@ export const ProjectData = [
   {
     id: 2,
     title: "Get-Grub",
+    mainDescription:
+      "A restaurant searching application, using Yelp's business API.",
     description:
       "This is a Mobile Application that uses Yelp's business API to search restaurants from the user's location. My role was to develop the front-end with CSS and request Yelp's business API endpoints to display restaurant information in the UI. ",
     imageSrc: getGrubImage,
