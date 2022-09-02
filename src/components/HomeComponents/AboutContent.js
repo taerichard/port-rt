@@ -26,15 +26,17 @@ const AboutContent = () => {
         </h4>
       </div>
       <div className="aboutContent-hobbies">
-        <div className="aboutContent-hobbies1">
-          <h3>travel.</h3>
+        <div className="aboutContent-hobbies-container">
+          <div className="aboutContent-hobbies1">
+            <h3>travel.</h3>
 
-          <h3>fitness.</h3>
-        </div>
-        <div className="aboutContent-hobbies2">
-          <h3>hiking.</h3>
+            <h3>fitness.</h3>
+          </div>
+          <div className="aboutContent-hobbies2">
+            <h3>hiking.</h3>
 
-          <h3>music.</h3>
+            <h3>music.</h3>
+          </div>
         </div>
         <div className="aboutContent-active__text">
           <p>
