@@ -47,7 +47,10 @@
 .aboutServiceCard-active {
   padding-bottom: 50px;
   padding-top: 5px;
-  transition: padding-bottom 2s;
+}
+
+.aboutServiceCard-active:after {
+  transition: ease-out 4s;
 }
 
 .aboutServiceCard-item button span {

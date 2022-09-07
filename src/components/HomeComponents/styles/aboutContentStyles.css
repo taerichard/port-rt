@@ -112,7 +112,7 @@
 }
 
 .aboutContent-button__text {
-  color: #e1dfdd;
+  color: #cacac9 !important;
   font-size: 2rem;
   text-decoration: none;
 }

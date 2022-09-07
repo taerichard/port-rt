@@ -1,13 +1,16 @@
 export const aboutServiceData = [
   {
     title: "UI Development",
-    description:
-      "Planning, designing, developing, and testing front end applications. Experience with Javascript, React, Bootstrap, Material-UI, Styled Components.",
+    description: "I design, develop, and test applications.",
   },
   {
     title: "Web Design",
-    description: "",
+    description: "I build layouts and features with optimal performance.",
   },
 
-  { title: "UX Research", description: "something" },
+  {
+    title: "UX Research",
+    description:
+      "Before development, I create diagrams and prototypes with interactive design tools. ",
+  },
 ];
