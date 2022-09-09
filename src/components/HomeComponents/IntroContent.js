@@ -37,7 +37,7 @@ const IntroContent = () => {
       </div>
       <div className="intro-button-container">
         <div className="intro-button">
-          <Link className="intro-button__text" to="about">
+          <Link className="intro-button__text-m" to="about">
             More
           </Link>
         </div>

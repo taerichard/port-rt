@@ -27,10 +27,11 @@ const Work = () => {
             <ProjectCard
               key={project.id}
               title={project.title}
-              description={project.description}
+              mainDescription={project.mainDescription}
               imageSrc={project.imageSrc}
               role={project.role}
               technology={project.technology}
+              description={project.description}
             />
           );
         })}

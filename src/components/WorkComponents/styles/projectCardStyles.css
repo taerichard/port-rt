@@ -22,7 +22,7 @@
 
 .project-card__description {
   font-size: 20px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   padding-bottom: 1rem;
 }
 
