@@ -49,6 +49,10 @@
   padding-top: 5px;
 }
 
+.aboutServiceCard-active:after {
+  transition: ease-out 4s;
+}
+
 .aboutServiceCard-item button span {
   cursor: pointer;
   height: 21px;

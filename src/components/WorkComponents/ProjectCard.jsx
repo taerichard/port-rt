@@ -9,7 +9,7 @@ const ProjectCard = (props) => {
     <div className="project-card-container">
       <div className="project-card">
         <h3 className="project-card__title">{props.title}</h3>
-        <p className="project-card__description">{props.description}</p>
+        <p className="project-card__description">{props.mainDescription}</p>
       </div>
 
       <div className="project-image-container">
