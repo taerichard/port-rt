@@ -11,6 +11,6 @@ export const aboutServiceData = [
   {
     title: "UX Research",
     description:
-      "Before development, I create diagrams and prototypes with interactive design tools. ",
+      "I create diagrams and prototypes with interactive design tools. ",
   },
 ];
