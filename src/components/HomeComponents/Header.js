@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./styles/headerStyles.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { SidebarData } from "../HomeComponents/Sidebar/SidebarData";
 
 const largeHeader = (
@@ -15,19 +15,18 @@ const largeHeader = (
       <p>Seattle, Washington</p>
     </div>
     <div className="header-nav">
-      <ul className="header-nav__items">
-        <a href="/">
-          <Link className="header-nav__item" to="work">
-            Work.
-          </Link>
-        </a>
-        <Link className="header-nav__item" to="about">
-          About.
-        </Link>
-        <Link className="header-nav__item" to="contact">
-          Contact.
-        </Link>
-      </ul>
+      {/* <ul className="header-nav__items"> */}
+      <NavLink className="header-nav__item" to="work">
+        Work.
+      </NavLink>
+
+      <NavLink className="header-nav__item" to="about">
+        About.
+      </NavLink>
+      <NavLink className="header-nav__item" to="contact">
+        Contact.
+      </NavLink>
+      {/* </ul> */}
     </div>
   </div>
 );
