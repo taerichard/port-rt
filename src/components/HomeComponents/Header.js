@@ -15,7 +15,6 @@ const largeHeader = (
       <p>Seattle, Washington</p>
     </div>
     <div className="header-nav">
-      {/* <ul className="header-nav__items"> */}
       <NavLink className="header-nav__item" to="work">
         Work.
       </NavLink>
@@ -26,7 +25,6 @@ const largeHeader = (
       <NavLink className="header-nav__item" to="contact">
         Contact.
       </NavLink>
-      {/* </ul> */}
     </div>
   </div>
 );
