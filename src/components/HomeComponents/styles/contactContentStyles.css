@@ -17,7 +17,7 @@
 
 .contactContent-title h4 {
   padding-top: 32px;
-  font-size: 25px;
+  font-size: 60px;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 20px;
@@ -55,10 +55,19 @@
     margin-top: 20rem;
   }
 
+  .contactContent-title {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .contactContent-title h4 {
+    font-size: 70px;
+  }
+
   .contactContent-title-2 {
     display: block;
-    grid-column-start: 6;
-    grid-column-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 9;
     align-self: flex-end;
     justify-self: center;
   }
