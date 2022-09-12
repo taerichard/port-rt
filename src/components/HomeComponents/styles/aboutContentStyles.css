@@ -204,8 +204,8 @@ div .aboutContent-title-2 {
   .aboutContent-title-3 {
     display: block;
     grid-row-start: 2;
-    grid-column-start: 3;
-    grid-column-end: 9;
+    grid-column-start: 4;
+    grid-column-end: 8;
     justify-self: center;
     align-self: center;
     width: min-content;
@@ -324,6 +324,7 @@ div .aboutContent-title-2 {
   }
 
   .aboutContent-bio {
+    display: block;
     grid-row-start: 4;
     grid-column-start: 2;
     grid-column-end: 12;
@@ -337,6 +338,7 @@ div .aboutContent-title-2 {
   }
 
   .aboutContent-large-button {
+    display: block;
     margin-top: 5rem;
     grid-row-start: 5;
     grid-column-start: 2;
