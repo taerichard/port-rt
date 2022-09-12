@@ -8,18 +8,9 @@ const ProjectContent = () => {
     <div className="project-container">
       <div className="project-title">
         <h3>02/</h3>
-        <h4>
-          Recent <br /> Project
-        </h4>
       </div>
       <div className="project-title-2">
-        <h4>
-          Design & <br />
-          Development
-        </h4>
-      </div>
-      <div className="project-title-3">
-        <h4>UI Developer</h4>
+        <h4> Project</h4>
       </div>
       <div className="project-1">
         <h4 className="project-1__title">Konbini</h4>
