@@ -102,17 +102,19 @@
 @media (min-width: 1100px) {
   .project-container {
     grid-template-columns: repeat(13, 1fr);
+    column-gap: 32px;
   }
 
   .project-title-2 {
     display: block;
-    grid-column-start: 6;
+    grid-column-start: 1;
     grid-column-end: 9;
     padding-top: 52px;
+    grid-row-start: 2;
   }
 
   .project-title-2 h4 {
-    font-size: 25px;
+    font-size: 70px;
     font-weight: 500;
     line-height: 20px;
   }
@@ -134,7 +136,7 @@
   .project-1 {
     margin-top: 5rem;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 4;
     margin-top: 8rem;
     position: realtive;
     /* height: 300px; */
@@ -158,12 +160,15 @@
     left: 50%;
     width: 200px;
     transform: translateX(-50%);
+    min-width: 500px;
+    text-align: center;
   }
 
   .project-1 .project-1__link {
     text-decoration: none;
     color: inherit;
-    font-size: 30px;
+    font-size: 40px;
+
     font-weight: 500;
     border-bottom: 2px solid black;
     padding-bottom: 2px;
@@ -171,10 +176,10 @@
 
   .project-img-container {
     margin-top: 8rem;
-    grid-column-start: 6;
+    grid-column-start: 4;
     grid-column-end: 14;
     min-height: 500px;
-    max-width: 900px;
+    max-width: 1200px;
   }
   .project-button {
     display: none;
