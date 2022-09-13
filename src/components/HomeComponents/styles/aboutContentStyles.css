@@ -271,11 +271,11 @@ div .aboutContent-title-2 {
 
   .aboutContent-image__overlay a {
     text-decoration: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     margin-top: 30%;
     position: absolute;
     text-align: center;
-    font-size: 8rem;
+    font-size: 5rem;
     color: white !important;
     width: 100%;
   }
