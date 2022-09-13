@@ -23,6 +23,9 @@ const ProjectContent = () => {
       </div>
       <div className="project-img-container">
         <img src={homeProjectImage} />
+        <div className="project-img-overlay">
+          <Link to="work">More Projects</Link>
+        </div>
       </div>
       <div className="project-button">
         <Link className="project-button__text" to="work">
