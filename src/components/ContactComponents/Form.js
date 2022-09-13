@@ -27,12 +27,15 @@ const Form = () => {
             </a>
           </li>
           <li className="socialMedia-lists_item">
-            <a target="_blank" href="https://instagram.com">
-              Instagram.
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/richard-tae-bb4ba215a/"
+            >
+              LinkedIn.
             </a>
           </li>
           <li className="socialMedia-lists_item">
-            <a target="_blank" href="https://github.com">
+            <a target="_blank" href="https://github.com/taerichard">
               Github.
             </a>
           </li>
