@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/aboutContentStyles.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import travelImage from "../../images/home/travel.jpg";
 import profileImage from "../../images/home/meSpain.jpg";
 
@@ -17,6 +17,9 @@ const AboutContent = () => {
       </div>
       <div className="aboutContent-image">
         <img src={profileImage} />
+        <div className="aboutContent-image__overlay">
+          <NavLink to="about">More</NavLink>
+        </div>
         <div className="aboutContent-image-header">
           <h3 className="aboutContent-image-name">
             <span>Ui</span>
