@@ -18,7 +18,7 @@ const AboutContent = () => {
       <div className="aboutContent-image">
         <img src={profileImage} />
         <div className="aboutContent-image__overlay">
-          <NavLink to="about">More</NavLink>
+          <NavLink to="about">About Page</NavLink>
         </div>
         <div className="aboutContent-image-header">
           <h3 className="aboutContent-image-name">

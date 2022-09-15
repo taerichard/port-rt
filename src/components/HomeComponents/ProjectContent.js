@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./styles/projectContentStyles.css";
 import homeProjectImage from "../../images/home/homeProjectImage.jpg";
 
@@ -24,7 +24,7 @@ const ProjectContent = () => {
       <div className="project-img-container">
         <img src={homeProjectImage} />
         <div className="project-img-overlay">
-          <Link to="work">More Projects</Link>
+          <NavLink to="work">Project Page</NavLink>
         </div>
       </div>
       <div className="project-button">

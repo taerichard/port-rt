@@ -13,7 +13,7 @@
   column-gap: 32px;
   grid-template-rows: min-content;
   row-gap: 0;
-  background-color: rgb(169, 169, 169);
+  background-color: rgb(220, 220, 220);
 }
 
 /* Title */
@@ -56,6 +56,7 @@
 }
 .projectModal-desc {
   font-size: 30px;
+  line-height: 35px;
 }
 
 /* Project Modal Information */
