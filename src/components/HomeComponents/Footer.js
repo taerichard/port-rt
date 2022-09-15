@@ -17,12 +17,15 @@ const Footer = () => {
             </a>
           </li>
           <li className="footer-middle__socialMedia__instagram">
-            <a target="_blank" href="https://instagram.com">
-              Instagram.
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/richard-tae-bb4ba215a/"
+            >
+              LinkedIn.
             </a>
           </li>
           <li className="footer-middle__socialMedia__github">
-            <a target="_blank" href="https://github.com">
+            <a target="_blank" href="https://github.com/taerichard">
               Github.
             </a>
           </li>

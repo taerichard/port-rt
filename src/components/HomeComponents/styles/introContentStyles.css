@@ -63,6 +63,19 @@
   transition-timing-function: ease-in-out;
 }
 
+.intro-button__text-m {
+  font-size: 32px;
+  /* text-decoration: none; */
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  color: rgb(202, 202, 201) !important;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+}
+
 .intro-button-large__text {
   display: none;
 }
@@ -106,7 +119,7 @@
     font-weight: 500;
     margin-top: 3rem;
     position: relative;
-    min-width: 100px;
+    min-width: 300px;
   }
 
   .intro-button__text {
