@@ -78,6 +78,16 @@
   /* .project-description-container {
     width: 400px;
   } */
+
+  .project-card-button-container {
+    width: 150px;
+    height: 150px;
+  }
+
+  .project-card-button-container p {
+    font-size: 30px;
+    font-weight: 500;
+  }
   .project-card__description {
     grid-column-start: 1;
     grid-column-end: 5;
